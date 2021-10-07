@@ -1,0 +1,337 @@
+@import 'variables';
+@import "mixins";
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $bgColor;
+    color: #fff;
+}
+  
+  
+  h1{
+      font-size: clamp(2.5em, 3.5em, 4em);
+  }
+  
+  h2{
+      font-size: clamp(1.75em, 4vw, 2.5em);
+  }
+  h4 {
+    font-size: clamp(20px, 3vw, 24px);
+  }
+  .bold{
+      font-weight: bold;
+  }
+  .margin-bottom{
+      margin-bottom: 20px;
+  }
+  .margin-top{
+    margin-top: 36px;
+  }
+  p{
+      font-size: 16px;
+      font-weight: normal;
+  }
+  a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .btn{
+      padding: 15px 40px;
+      border: 0px;
+      border-radius: 8px;
+      background-color: $primaryColor;
+      font-family: poppins, 'sans serrif';
+      transition: 0.3s;
+      height: 54px;
+      width: auto;
+  }
+  .btn:hover{
+      background-color: $secondayColor;
+      transition: 0.3s;
+  }
+  a.btn{
+      text-decoration: none;
+      color: #fff;
+  }
+  button{
+      color: #fff;
+      font-family: poppins, 'sans serrif';
+  }
+  textarea{
+      font-family: poppins, 'sans serrif';
+  }
+  /*=====NAVIGATION BAR STYLING=====*/
+  .banner-wrapper{
+      min-height: 80vh;
+  }
+  .navbar {
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+    justify-content: space-around;
+  }
+  .navbar-logo{
+    width: 150px;
+    height: auto;
+  }
+  .navbar__Link {
+    padding-right: 8px;
+  }
+  
+  .navbar__Items {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .navbar__Items li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .navbar__Items li a{
+    padding: 10px;
+    text-decoration: none;
+    line-height: 27px;
+    transition: 0.3s;
+  }
+  .navbar__Items li a:hover{
+    transition: 0.3s;
+    color: $secondayColor;
+  }
+  .navbar__Items--right {
+    margin-left:auto;
+  }
+  
+  .navbar__Link-toggle {
+    display: none;
+  }
+  @media only screen and (max-width: 922px) {
+    .navbar {
+    background-color: $bgColor;
+    }
+    .navbar-logo{
+    width: 150px;
+    height: auto;
+    margin: 3px 5px;
+  }
+    .navbar__Items,
+    .navbar {
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: 0.3s;
+    }
+      
+      .navbar__Items {
+      display:none;
+      margin-left: 0;
+    }
+    .navbar__Items li{
+    display: block;
+      } 
+      .navbar__Items--right {
+      margin-left:0;
+    }
+    .navbar__Items--right .hire-btn{
+        margin-top: 40px;
+    }
+      
+      .navbar__ToggleShow {
+      display: flex;
+      height: auto;
+      padding-bottom: 20px;
+      transition: 0.3s;
+    }
+      
+      .navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 40px;
+      height: auto;
+    }
+    .navbar__Link-toggle img{
+      width: 32px;
+      height: auto;
+    } 
+  }
+  /*=====END OF NAVIGATION BAR STYLING=====*/
+  
+  
+  /*=====HERO SECTION STYLING=====*/
+  .hero-section{
+      display: grid;
+      place-items: center;
+  }
+  .hero-section .hero-section__title{
+      text-align: center;
+      max-width: 980px;
+      margin: 120px 0 20px 0px;
+      padding: 0 15px;
+    line-height: 1.2;
+  }
+  .hero-section .hero-img{
+    width: 80%;
+    height: auto;
+    margin-top: 63px;
+  }
+  
+  
+  @media (max-width: 1000px){
+      .hero-section .hero-section__title h1{
+          font-size: 40px;
+      }
+  }
+  @media (max-width: 600px){
+      .hero-section .hero-section__title{
+          font-size: 2em;
+          margin: 100px 0 20px 0px;
+      }
+  }
+  @media (max-width: 360px){
+      .hero-section .hero-section__title{
+          font-size: 1.8em;
+          margin: 80px 0 20px 0px;
+      }
+      .hero-section .hero-section__title{
+        width: 100%;
+    }
+  }
+  @media (max-width: 330px){
+    .hero-section .hero-section__title h1{
+        font-size: 36px;
+        margin: 80px 0 20px 0px;
+    }
+    .hero-section .hero-section__title{
+      width: 100%;
+  }
+}
+  /*=====END OF HERO SECTION STYLING=====*/
+
+  /*=====TRADING SIGNAL SECTION STYLING====*/
+.trading-section{
+    @include row-column;
+    .description-container{
+        @include column-description;
+    }
+    .image-container{
+        @include column-img;
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+@media only screen and (max-width: 700px){
+	.trading-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+        }
+        .image-container{
+            margin-top: 24px;
+        }
+    }
+}
+/*=====END OF TRADING SIGNAL SECTION STYLING====*/
+
+
+/*=====COMMUNITY FEATURES SECTION STYLING====*/
+.feature-section{
+    @include row-column;
+    .description-container{
+        @include column-description;
+        margin-top: 36px;
+    }
+    .image-container{
+        @include column-img;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        .feature-section__item{
+            width: 280px;
+            margin-top: 36px;
+        }
+        h4{
+            color: $secondayColor;
+            margin: 12px 0 8px 0;
+        }
+        .feature-section_icon{
+            color: #fff;
+        }
+        .ri-community-line{
+            background-color: #6A6FDC;
+            @include icon-preset;
+        }
+        .ri-bit-coin-line{
+            background-color: #EE5717;
+            @include icon-preset;
+        }
+        .ri-line-chart-line{
+            background-color: #38DF35;
+            @include icon-preset;
+        }
+        .ri-store-line{
+            background-color: #F83A89;
+            @include icon-preset;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+	.feature-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+        }
+
+    }
+}
+
+
+
+.history-section{
+    @include row-column;
+    .description-container{
+        @include column-description;
+        h2{
+            width: 80%;
+            line-height: 1.2;
+        }
+        p{
+            margin-bottom: 24px;
+        }
+    }
+    .image-container{
+        @include column-img;
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+	.history-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+        }
+        .image-container{
+            margin-top: 36px;
+        }
+    }
+}
