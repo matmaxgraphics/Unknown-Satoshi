@@ -200,11 +200,15 @@ body{
   
   
   @media (max-width: 1000px){
+        
       .hero-section .hero-section__title h1{
           font-size: 40px;
       }
   }
   @media (max-width: 600px){
+    .hero-section, .hero-section .hero-section__title, .hero-img{
+        width: 100%;
+    }
       .hero-section .hero-section__title{
           font-size: 2em;
           margin: 100px 0 20px 0px;
