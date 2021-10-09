@@ -8,6 +8,9 @@
         line-height: 1.2;
         margin-bottom: 24px;
     }
+    .description-container{
+        padding-right: 24px;
+    }
 }
 
 @mixin column-img{
@@ -27,4 +30,24 @@
 @mixin icon-preset {
     padding: 8px;
     border-radius: 8px;
+}
+
+@mixin responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 0.7rem;
+    place-items: center;
+}
+
+@mixin card-properties {
+    width: 290px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    img{
+        object-fit: cover;
+        object-position: center;
+        width: 290px;
+        height: 230px;
+        border-radius: 8px;
+    }
 }

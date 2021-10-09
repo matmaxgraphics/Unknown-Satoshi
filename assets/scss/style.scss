@@ -13,8 +13,13 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: $bgColor;
     color: #fff;
+    max-width: 1440px;
+    margin: auto;
 }
-  
+
+.page-wrapper{
+    padding: 24px;
+}
   
   h1{
       font-size: clamp(2.5em, 3.5em, 4em);
@@ -25,6 +30,13 @@ body{
   }
   h4 {
     font-size: clamp(20px, 3vw, 24px);
+  }
+  h5{
+      font-size: 18px;
+      font-weight: 600;
+  }
+  h2, h4, h5{
+      line-height: 1.2;
   }
   .bold{
       font-weight: bold;
@@ -238,6 +250,7 @@ body{
 
         .description-container, .image-container{
             width: 100%;
+            padding:unset;
         }
         .image-container{
             margin-top: 24px;
@@ -295,9 +308,47 @@ body{
 
         .description-container, .image-container{
             width: 100%;
+            padding: unset;
         }
 
     }
+}
+
+
+
+.testimonial-section{
+    margin-top: 124px;
+    h2{
+        max-width: 930px;
+        margin-bottom: 24px;
+    }
+    .testimonial-container{
+        display: flex;
+        background-color: $bgGrey;
+        border-radius: 12px;
+        padding: 24px;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .testimonial-section_item{
+        width: 300px;
+        margin-bottom: 48px;
+        .star-rating{
+            margin-bottom: 12px;
+        }
+        .ri-star-fill{
+            color: $secondayColor;
+        }
+        .ri-star-line{
+            color: $secondayColor;
+            opacity: 0.6;
+        }
+        p{
+            margin-bottom: 24px;
+        }
+    }
+
 }
 
 
@@ -335,3 +386,191 @@ body{
         }
     }
 }
+
+
+
+.blog-section{
+    margin-top: 123px;
+    h2{
+        margin-bottom: 48px;
+    }
+    .blog-post__container{
+        @include responsive-grid;
+    }
+    .blog-post__card{
+        @include card-properties;
+        background: $blogCardGrey;
+        .text-container{
+            padding: 12px;
+        }
+        h5{
+            color: $primaryColor;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        a{
+            color: inherit;
+        }
+    }
+}
+
+.course-section{
+    margin-top: 123px;
+    h2{
+        max-width: 840px;
+        margin-bottom: 48px;
+    }
+
+    .course-container{
+        @include responsive-grid;
+    }
+    .course-container__item{
+        @include card-properties;
+        &:hover{
+            text-decoration: underline;
+        }
+        img{
+            transition: 0.3s;
+            &:hover{
+                transform: scale(0.97);
+                transition: 0.3s;
+            }
+        }
+    }
+
+}
+
+
+.newsletter-section{
+    margin-top: 123px;
+    p{
+        max-width: 840px;
+        margin-bottom: 24px;
+    }
+    form{
+        display: inline;
+    }
+    .input-field{
+        width: 60%;
+        background-color: $inputGrey;
+        color: #fff;
+        padding: 8px;
+        height: 54px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: 'poppins', sans-serif;
+        margin-right: 12px;
+        &::placeholder{
+            color: $lightGrey;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+.newsletter-section{
+    form{
+        display: block;
+    }
+        .input-field{
+            width: 100%;
+            margin-bottom: 36px;
+        }
+    }
+}
+
+
+.join-community{
+    display: grid;
+    place-items: center;
+    margin: 123px 0 48px 0;
+    
+    
+    h2{
+        text-align: center;
+        margin-bottom: 36px;
+        max-width: 965px;
+    }
+}
+
+
+footer{
+    background-color: $bgGrey;
+    height: 450px;
+    position: relative;
+    .footer-content__container{
+        display: flex;
+        justify-content: center;
+        h4{
+            margin-bottom: 24px;
+        }
+    }
+    .footer-content__item{
+        flex: 1;
+        padding: 24px;
+        .contact-options{
+            margin-bottom: 48px;
+            max-width: 80%;
+            p{
+                margin-bottom: 12px;
+                display: flex;
+            }
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            i{
+                font-size: 24px;
+                margin-right: 12px;
+            }
+        }
+        .social-links{
+            i{
+                font-size: 24px;
+                margin-right: 12px;
+            }
+            .ri-linkedin-fill{
+                background-color: $linkedinBlue;
+                @include icon-preset;
+            }
+            .ri-twitter-fill{
+                background-color: $twitterBlue;
+                @include icon-preset;
+            }
+            .ri-instagram-line{
+                background-color: $instagramMaroon;
+                @include icon-preset;
+            }
+        }
+
+        .links{
+            a{
+                display: block;
+                margin-bottom: 6px;
+                transition: 0.3s;
+                &:hover{
+                    color: $secondayColor;
+                    margin-left: 8px;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 934px){
+    footer{
+        height: auto;
+        .footer-content__container{
+            flex-direction: column;
+            padding-left: 12px;
+        }
+    }
+}
+
