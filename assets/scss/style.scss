@@ -20,6 +20,11 @@ body{
 .page-wrapper{
     padding: 24px;
 }
+@media only screen and (max-width: 600px) {
+    .page-wrapper{
+        padding: 12px;
+    }
+}
   
   h1{
       font-size: clamp(2.5em, 3.5em, 4em);
