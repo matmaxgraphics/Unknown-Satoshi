@@ -18,12 +18,12 @@ body {
 }
 
 .page-wrapper {
-  padding: 24px;
+  padding: 0 24px;
 }
 
 @media only screen and (max-width: 600px) {
   .page-wrapper {
-    padding: 12px;
+    padding: 0 12px;
   }
 }
 h1 {
@@ -167,6 +167,8 @@ textarea {
 @media only screen and (max-width: 922px) {
   .navbar {
     background-color: #0A0909;
+    position: fixed;
+    width: 100%;
   }
 
   .navbar-logo {
@@ -221,7 +223,7 @@ textarea {
     display: initial;
     position: absolute;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 10px 24px 0 0;
     width: 40px;
     height: auto;
   }
