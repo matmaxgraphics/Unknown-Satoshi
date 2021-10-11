@@ -442,36 +442,27 @@ textarea {
   max-width: 930px;
   margin-bottom: 24px;
 }
-.testimonial-section .testimonial-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.testimonial-section .owl-carousel {
   background-color: #1D1D1D;
   border-radius: 12px;
   padding: 24px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding-left: 50px;
 }
-.testimonial-section .testimonial-section_item {
-  width: 300px;
+.testimonial-section .testimonial-container {
+  max-width: 350px;
   margin-bottom: 48px;
 }
-.testimonial-section .testimonial-section_item .star-rating {
+.testimonial-section .testimonial-container .star-rating {
   margin-bottom: 12px;
 }
-.testimonial-section .testimonial-section_item .ri-star-fill {
+.testimonial-section .testimonial-container .ri-star-fill {
   color: #F8A606;
 }
-.testimonial-section .testimonial-section_item .ri-star-line {
+.testimonial-section .testimonial-container .ri-star-line {
   color: #F8A606;
   opacity: 0.6;
 }
-.testimonial-section .testimonial-section_item p {
+.testimonial-section .testimonial-container main p {
   margin-bottom: 24px;
 }
 

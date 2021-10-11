@@ -334,31 +334,28 @@ body{
         max-width: 930px;
         margin-bottom: 24px;
     }
-    .testimonial-container{
-        display: flex;
+    .owl-carousel{
         background-color: $bgGrey;
         border-radius: 12px;
         padding: 24px;
-        justify-content: space-around;
-        align-items: baseline;
-        flex-wrap: wrap;
+        padding-left: 50px;
     }
-    .testimonial-section_item{
-        width: 300px;
+    .testimonial-container{
+        max-width: 350px;
         margin-bottom: 48px;
-        .star-rating{
+        .star-rating {
             margin-bottom: 12px;
         }
-        .ri-star-fill{
+        .ri-star-fill {
             color: $secondayColor;
-        }
-        .ri-star-line{
+          }
+          .ri-star-line {
             color: $secondayColor;
             opacity: 0.6;
-        }
-        p{
+          }
+          main p {
             margin-bottom: 24px;
-        }
+          }
     }
 
 }

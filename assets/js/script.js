@@ -1,3 +1,7 @@
+//Owl Carousel JS control
+
+
+
 //Navbar Toggling
 function classToggle() {
     const navs = document.querySelectorAll('.navbar__Items')
@@ -7,3 +11,6 @@ function classToggle() {
   
   document.querySelector('.navbar__Link-toggle')
     .addEventListener('click', classToggle);
+
+
+
