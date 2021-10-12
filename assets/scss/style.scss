@@ -95,6 +95,7 @@ body{
     font-family: sans-serif;
     color: white;
     justify-content: space-around;
+    width: 100%;
     
   }
   .navbar-logo{
@@ -176,12 +177,13 @@ body{
       display: initial;
       position: absolute;
       cursor: pointer;
-      margin: 10px 24px 0 0;
+      margin: 10px 36px 0 0;
       width: 40px;
       height: auto;
+      right: 16px;
     }
     .navbar__Link-toggle img{
-      width: 32px;
+      width: 40px;
       height: auto;
     } 
   }
@@ -589,15 +591,11 @@ footer{
 
 
 //=====ABOUT PAGE STYLING=====//
-.about-page{
-    padding: 0 12px;
-}
-
 
 .banner-section{
     width: 100%;
     border-radius: 12px;
-    background: linear-gradient( rgba(0,0,0, 0.3) ), url('../images/bg-img2.jpg'), no-repeat, center;
+    background: linear-gradient( rgba(0,0,0, 0.3) ), url('../images/bg-img.jpg'), no-repeat, center;
     height: 400px;
     background-size: cover;
     display: flex;
@@ -619,18 +617,25 @@ footer{
         h1{
             font-size: 36px;
         }
+        .header-group{
+            margin: 24px;
+        }
     }
 }
 
 
 
 .about-description{
-    margin-top: 114px;
+    margin: 96px 12px 0 12px;
     max-width: 1020px;
+    h2{
+        margin-bottom: 12px;
+    }
 }
 
 
 .trading-section{
+    margin-top: 84px;
     .image-container{
         margin-right: 24px;
     }
