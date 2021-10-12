@@ -65,7 +65,7 @@ body{
       border: 0px;
       border-radius: 8px;
       background-color: $primaryColor;
-      font-family: poppins, 'sans serrif';
+      font-family: 'Poppins', sans-serif;
       transition: 0.3s;
       height: 54px;
       width: auto;
@@ -80,10 +80,10 @@ body{
   }
   button{
       color: #fff;
-      font-family: poppins, 'sans serrif';
+      font-family: 'Poppins', sans-serif;
   }
   textarea{
-      font-family: poppins, 'sans serrif';
+      font-family: 'Poppins', sans-serif;
   }
   /*=====NAVIGATION BAR STYLING=====*/
   .banner-wrapper{
@@ -583,3 +583,88 @@ footer{
     }
 }
 
+
+
+
+
+
+//=====ABOUT PAGE STYLING=====//
+.about-page{
+    padding: 0 12px;
+}
+
+
+.banner-section{
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient( rgba(0,0,0, 0.3) ), url('../images/bg-img2.jpg'), no-repeat, center;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
+    .header-group{
+        margin: 48px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h4{
+        font-weight: normal;
+    }
+}
+@media only screen and (max-width: 450px){
+    .banner-section{
+        h1{
+            font-size: 36px;
+        }
+    }
+}
+
+
+
+.about-description{
+    margin-top: 114px;
+    max-width: 1020px;
+}
+
+
+.trading-section{
+    .image-container{
+        margin-right: 24px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .trading-section{
+        .image-container{
+            margin-bottom: 24px;
+        }
+       
+    }
+}
+
+.team-section{
+    margin-top: 96px;
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .team-container{
+    @include card-responsive-flex;
+        .card-container{
+            background-color: unset;
+            p{
+                font-weight: bold;
+                margin: 12px 0 6px 0;
+                display: flex;
+                justify-content: space-between;
+                i{
+                    @include icon-preset;
+                    background-color: $linkedinBlue;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

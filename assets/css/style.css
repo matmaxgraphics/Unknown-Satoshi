@@ -74,7 +74,7 @@ a {
   border: 0px;
   border-radius: 8px;
   background-color: #EE5717;
-  font-family: poppins, "sans serrif";
+  font-family: "Poppins", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 54px;
@@ -94,11 +94,11 @@ a.btn {
 
 button {
   color: #fff;
-  font-family: poppins, "sans serrif";
+  font-family: "Poppins", sans-serif;
 }
 
 textarea {
-  font-family: poppins, "sans serrif";
+  font-family: "Poppins", sans-serif;
 }
 
 /*=====NAVIGATION BAR STYLING=====*/
@@ -753,4 +753,114 @@ footer .footer-content__item .links a:hover {
             flex-direction: column;
     padding-left: 12px;
   }
+}
+.about-page {
+  padding: 0 12px;
+}
+
+.banner-section {
+  width: 100%;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../images/bg-img2.jpg"), no-repeat, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../images/bg-img2.jpg"), no-repeat, center;
+  height: 400px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.banner-section .header-group {
+  margin: 48px;
+}
+.banner-section h1 {
+  font-size: 40px;
+}
+.banner-section h4 {
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 450px) {
+  .banner-section h1 {
+    font-size: 36px;
+  }
+}
+.about-description {
+  margin-top: 114px;
+  max-width: 1020px;
+}
+
+.trading-section .image-container {
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 450px) {
+  .trading-section .image-container {
+    margin-bottom: 24px;
+  }
+}
+.team-section {
+  margin-top: 96px;
+}
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.team-section .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.team-section .team-container .card-container {
+  min-width: 290px;
+  border-radius: 8px;
+  margin: 12px;
+  background: #1A1919;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+.team-section .team-container .card-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+.team-section .team-container .card-container {
+  background-color: unset;
+}
+.team-section .team-container .card-container p {
+  font-weight: bold;
+  margin: 12px 0 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team-section .team-container .card-container p i {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #0077B5;
+  font-weight: normal;
 }
