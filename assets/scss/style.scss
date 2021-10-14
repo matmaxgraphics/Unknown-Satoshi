@@ -82,8 +82,21 @@ body{
       color: #fff;
       font-family: 'Poppins', sans-serif;
   }
+
+  .input-field, textarea{
+    background-color: $inputGrey;
+    color: #fff;
+    padding: 8px;
+    height: 54px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    width: 80%;
+  }
   textarea{
-      font-family: 'Poppins', sans-serif;
+    height: 150px;
   }
   /*=====NAVIGATION BAR STYLING=====*/
   .banner-wrapper{
@@ -467,15 +480,6 @@ body{
     }
     .input-field{
         width: 60%;
-        background-color: $inputGrey;
-        color: #fff;
-        padding: 8px;
-        height: 54px;
-        outline: none;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-family: 'poppins', sans-serif;
         margin-right: 12px;
         &::placeholder{
             color: $lightGrey;
@@ -670,6 +674,90 @@ footer{
                     font-weight: normal;
                 }
             }
+        }
+    }
+}
+
+//CONTACT PAGE STYLING
+.header-group{
+    text-align: center;
+    margin-bottom: 72px;
+}
+.contact-wrapper{
+    display: flex;
+    width: 80%;
+    background-color: $bgGrey;
+    margin: auto;
+    border-radius: 8px;
+    padding: 48px 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+    .contact-details{
+        width: 50%;
+        h4{
+            margin-bottom: 24px;
+        }
+        .contact-options{
+            margin-bottom: 48px;
+            max-width: 80%;
+            p{
+                margin-bottom: 12px;
+                display: flex;
+            }
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            i{
+                font-size: 24px;
+                margin-right: 12px;
+            }
+        }
+        .social-links{
+            i{
+                font-size: 24px;
+                margin-right: 12px;
+            }
+        }
+    }
+    .contact-fields{
+        width: 50%;
+        h4{
+            margin-bottom: 24px;
+        }
+        form{
+            width: 80%;
+            div{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 36px;
+            }
+            .input-field, textarea{
+                margin-top: 8px;
+                width: 100%;
+            }
+            button{
+                float: right;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .contact-wrapper{
+        flex-direction: column;
+        width: 90%;
+        padding: 48px 0 48px 24px;
+        .contact-details, .contact-fields{
+            width: 100%;
+        }
+        .contact-fields{
+            margin-top: 48px;
+            .input-field{
+                width: 100%;
+            } 
         }
     }
 }
