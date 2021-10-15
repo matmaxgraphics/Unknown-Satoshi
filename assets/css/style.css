@@ -876,7 +876,7 @@ footer .footer-content__item .links a:hover {
   font-weight: normal;
 }
 
-.header-group {
+.contact-headings {
   text-align: center;
   margin-bottom: 72px;
   height: 16vh;
@@ -972,5 +972,80 @@ footer .footer-content__item .links a:hover {
   }
   .contact-wrapper .contact-fields .input-field {
     width: 100%;
+  }
+}
+.trade-banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../images/bg-img3.png"), no-repeat, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/bg-img3.png"), no-repeat, center;
+  background-size: cover;
+  width: 100%;
+}
+
+.trade-table {
+  width: 80%;
+  background-color: #1D1D1D;
+  margin: auto;
+  margin-top: 96px;
+  border-radius: 8px;
+  padding: 48px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table td, table th {
+  text-align: left;
+  padding: 8px;
+}
+table th {
+  background-color: #1D1D1D;
+}
+table tr:nth-child(even) {
+  background-color: #333333;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .trade-table {
+    width: 90%;
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 48px;
+  }
+  table td {
+    border-bottom: 1px solid #464343;
+    display: block;
+    text-align: right;
+  }
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  table table td:last-child {
+    border-bottom: 0;
   }
 }
