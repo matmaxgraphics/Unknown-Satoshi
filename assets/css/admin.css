@@ -152,6 +152,17 @@ h2 {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 500px) {
+  .alt-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .alt-nav h4 {
+    margin-bottom: 24px;
+  }
+}
 .trade-table {
   width: 100%;
 }
@@ -160,4 +171,38 @@ h2 {
 }
 .trade-table tbody {
   font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .trade-table table {
+    border: 0;
+  }
+  .trade-table table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .trade-table table tr {
+    display: block;
+    margin-bottom: 48px;
+  }
+  .trade-table table td {
+    border-bottom: 1px solid #464343;
+    display: block;
+    text-align: right;
+  }
+  .trade-table table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .trade-table table table td:last-child {
+    border-bottom: 0;
+  }
 }

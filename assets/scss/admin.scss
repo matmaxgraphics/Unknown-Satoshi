@@ -91,6 +91,14 @@ h2{
         font-weight: 400;
     }
 }
+@media only screen and (max-width: 500px){
+    .alt-nav{
+        flex-direction: column;
+        h4{
+            margin-bottom: 24px;
+        }
+    }
+}
 .trade-table{
     width: 100%;
     thead{
@@ -99,4 +107,11 @@ h2{
     tbody{
         font-weight: 400;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .trade-table{
+        @include responsiveTable600;
+    }
+
 }
