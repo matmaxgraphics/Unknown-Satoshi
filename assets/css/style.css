@@ -110,10 +110,16 @@ button {
   width: 80%;
 }
 
+@media only screen and (max-width: 800px) {
+  .input-field, textarea {
+    width: 100%;
+  }
+}
 textarea {
   height: 150px;
 }
 
+/*======ALTERNATIVE STYLING======*/
 /*=====NAVIGATION BAR STYLING=====*/
 .banner-wrapper {
   min-height: 80vh;
@@ -753,13 +759,14 @@ footer .footer-content__item .links a:hover {
     height: auto;
   }
   footer .footer-content__container {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     padding-left: 12px;
   }
 }
+/*=====ABOUT PAGE STYLING=====*/
 .banner-section {
   width: 100%;
   border-radius: 12px;
@@ -885,6 +892,8 @@ footer .footer-content__item .links a:hover {
   font-weight: normal;
 }
 
+/*=====END OF ABOUT PAGE STYLING=====*/
+/*=-------CONTACT PAGE STYLING---------*/
 .contact-headings {
   text-align: center;
   margin-bottom: 72px;
@@ -983,6 +992,7 @@ footer .footer-content__item .links a:hover {
     width: 100%;
   }
 }
+/*--------TRADE HISTORY STYLING--------*/
 .trade-banner {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../images/bg-img4.jpg"), no-repeat, center;
   background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../images/bg-img4.jpg"), no-repeat, center;
@@ -994,26 +1004,28 @@ footer .footer-content__item .links a:hover {
 }
 
 .trade-table {
-  width: 80%;
+  width: 90%;
   background-color: #1D1D1D;
   margin: auto;
   margin-top: 96px;
   border-radius: 8px;
   padding: 48px;
 }
-
-table {
+.trade-table table {
   border-collapse: collapse;
   width: 100%;
 }
-table td, table th {
-  text-align: left;
-  padding: 8px;
+.trade-table table thead {
+  font-weight: 500;
 }
-table th {
+.trade-table table td, .trade-table table th {
+  text-align: left;
+  padding: 12px;
+}
+.trade-table table th {
   background-color: #1D1D1D;
 }
-table tr:nth-child(even) {
+.trade-table table tr:nth-child(even) {
   background-color: #333333;
   border-radius: 8px;
 }
@@ -1156,3 +1168,5 @@ table tr:nth-child(even) {
 .pagination p i {
   margin-left: 8px;
 }
+
+/*---------DEMO SIDEBAR STYLING-------*/

@@ -95,9 +95,135 @@ body{
     font-family: 'poppins', sans-serif;
     width: 80%;
   }
+  @media only screen and (max-width: 800px){
+    .input-field, textarea{
+        width: 100%;
+    }
+  }
   textarea{
     height: 150px;
   }
+  /*======ALTERNATIVE STYLING======*/
+//   .container {
+//     overflow: hidden;
+//     *zoom: 1;
+//     margin: 0 20px;
+//   }
+  
+//   .site-content {
+//     padding-top: 66px;
+//   }
+  
+//   /* HEADER */
+//   .header {
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     height: 66px;
+//     line-height: 66px;
+//     color: #fff;
+//     background-color: #3f51b5;
+//   }
+  
+//   .header__logo {
+//     font-weight: 700;
+//     padding: 0 25px;
+//     float: left;
+//   }
+  
+//   /* MENU */
+//   .menu {
+//     float: left;
+//   }
+//   .menu a {
+//     padding: 0 10px;
+//   }
+//   .menu a:hover {
+//     color: #c5cae9;
+//   }
+  
+//   /* RESPONSIVE */
+//   @media only screen and (max-width: 768px) {
+//     .site-pusher,
+//     .site-container {
+//       height: 100%;
+//     }
+  
+//     .site-container {
+//       overflow: hidden;
+//     }
+  
+//     .site-pusher {
+//       transition-duration: 0.3s;
+//       transform: translateX(0px);
+//     }
+  
+//     .site-content {
+//       position: absolute;
+//       top: 66px;
+//       right: 0;
+//       left: 0;
+//       bottom: 0;
+//       padding-top: 0;
+//       overflow-y: scroll;
+//       -webkit-overflow-scrolling: touch;
+//     }
+  
+//     .header {
+//       position: static;
+//     }
+  
+//     .header__icon {
+//       position: relative;
+//       display: block;
+//       float: left;
+//       width: 50px;
+//       height: 66px;
+//       cursor: pointer;
+//     }
+//     .header__icon:after {
+//       content: '';
+//       position: absolute;
+//       display: block;
+//       width: 1rem;
+//       height: 0;
+//       top: 16px;
+//       left: 15px;
+//       box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+//     }
+  
+//     .menu {
+//       position: absolute;
+//       left: 0;
+//       top: 0;
+//       bottom: 0;
+//       background-color: #3849a2;
+//       /*    overflow-y: scroll;
+//           -webkit-overflow-scrolling: touch;*/
+//       width: 250px;
+//       transform: translateX(-250px);
+//     }
+//     .menu a {
+//       display: block;
+//       height: 40px;
+//       text-align: center;
+//       line-height: 40px;
+//       border-bottom: 1px solid #3f51b5;
+//     }
+  
+//     .with--sidebar .site-pusher {
+//       transform: translateX(250px);
+//     }
+//     .with--sidebar .site-cache {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       background-color: rgba(0, 0, 0, 0.6);
+//     }
+//   }
+  
   /*=====NAVIGATION BAR STYLING=====*/
   .banner-wrapper{
       min-height: 80vh;
@@ -146,6 +272,7 @@ body{
   .navbar__Link-toggle {
     display: none;
   }
+  
   @media only screen and (max-width: 922px) {
     .navbar {
     background-color: $bgColor;
@@ -583,7 +710,7 @@ footer{
     footer{
         height: auto;
         .footer-content__container{
-            flex-direction: column;
+            flex-flow: row wrap;
             padding-left: 12px;
         }
     }
@@ -594,7 +721,7 @@ footer{
 
 
 
-//=====ABOUT PAGE STYLING=====//
+/*=====ABOUT PAGE STYLING=====*/
 
 .banner-section{
     width: 100%;
@@ -688,8 +815,9 @@ footer{
         }
     }
 }
+/*=====END OF ABOUT PAGE STYLING=====*/
 
-//CONTACT PAGE STYLING
+/*=-------CONTACT PAGE STYLING---------*/
 .contact-headings{
     text-align: center;
     margin-bottom: 72px;
@@ -739,21 +867,7 @@ footer{
         h4{
             margin-bottom: 24px;
         }
-        form{
-            width: 80%;
-            div{
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 36px;
-            }
-            .input-field, textarea{
-                margin-top: 8px;
-                width: 100%;
-            }
-            button{
-                float: right;
-            }
-        }
+        @include formStyling;
     }
 }
 
@@ -779,7 +893,7 @@ footer{
 }
 
 
-//TRADE HISTORY STYLING
+/*--------TRADE HISTORY STYLING--------*/
 .trade-banner{
     background: linear-gradient( rgba(0,0,0, 0.3) ), url('../images/bg-img4.jpg'), no-repeat, center;
     background-size: cover;
@@ -789,28 +903,16 @@ footer{
     }
 }
 .trade-table{
-    width: 80%;
+    width: 90%;
     background-color: $bgGrey;
     margin: auto;
     margin-top: 96px;
     border-radius: 8px;
     padding: 48px;
+
+    @include tableStyling;
 }
-table{
-    border-collapse: collapse;
-    width: 100%;
-    td, th{
-    text-align: left;
-    padding: 8px;
-    }
-    th{
-        background-color: $bgGrey;
-    }
-    tr:nth-child(even) {
-        background-color: $grey-1;
-        border-radius: 8px;
-    }
-}
+
 
 @media only screen and (max-width: 800px){
     .trade-table{
@@ -820,40 +922,7 @@ table{
 }
 
 @media screen and (max-width: 600px) {
-    table {
-      border: 0;
-      thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-      }
-      tr {
-        display: block;
-        margin-bottom: 48px;
-      }
-
-      td {
-        border-bottom: 1px solid $imageGrey;
-        display: block;
-        text-align: right;
-      }
-
-      td::before {
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
-        text-transform: capitalize;
-      }
-      
-      table td:last-child {
-        border-bottom: 0;
-      }
-    }
+    @include responsiveTable600;
 
 }
 
@@ -948,3 +1017,7 @@ table{
         }
     }
 }
+
+
+
+/*---------DEMO SIDEBAR STYLING-------*/

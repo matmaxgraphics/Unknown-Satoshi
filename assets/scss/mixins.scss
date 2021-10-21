@@ -72,3 +72,79 @@
           }
       }
 }
+
+@mixin formStyling {
+    form{
+        width: 80%;
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 36px;
+        }
+        .input-field, textarea{
+            margin-top: 8px;
+            width: 100%;
+        }
+        button{
+            float: right;
+        }
+    }
+}
+
+@mixin tableStyling {
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        thead{
+            font-weight: 500;
+        }
+        td, th{
+        text-align: left;
+        padding: 12px;
+        }
+        th{
+            background-color: $bgGrey;
+        }
+        tr:nth-child(even) {
+            background-color: $grey-1;
+            border-radius: 8px;
+        }
+    }
+}
+
+@mixin responsiveTable600 {
+    table {
+        border: 0;
+        thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+        tr {
+          display: block;
+          margin-bottom: 48px;
+        }
+  
+        td {
+          border-bottom: 1px solid $imageGrey;
+          display: block;
+          text-align: right;
+        }
+  
+        td::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+        
+        table td:last-child {
+          border-bottom: 0;
+        }
+      }
+}

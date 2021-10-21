@@ -1,0 +1,102 @@
+@import 'variables';
+@import "mixins";
+
+.edit, .delete{
+    &:hover{
+        text-decoration: underline;
+        color: $secondayColor;
+        transition: 0.3s;
+    }  
+}
+.edit{
+    color: $success;
+    transition: 0.3s;
+}
+.delete{
+    color: $danger;
+    transition: 0.3s;
+}
+/*----------LOGIN PAGE STYLING----------*/
+.admin-nav{
+    height: 72px;
+    // border: 1px dashed red;
+    padding: 24px 8px;
+}
+.admin-nav img{
+    margin-top: 12px;
+}
+h2{
+    text-align: center;
+    margin: 48px 0;
+}
+.login-wrapper{
+    width: 50%;
+    margin: auto;
+    background-color: $bgGrey;
+    height: 25em;
+    border-radius: 8px;
+}
+.login-fields{
+    @include formStyling;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+}
+
+@media only screen and (max-width: 800px){
+    .login-wrapper{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .login-wrapper{
+        width: 90%;
+    }
+}
+
+/*-------ADMIN INDEX PAGE STYLING--------*/
+.admin-index table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    th, td{
+        text-align: left;
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .admin-index{
+        table{
+            width: 95%;
+        }
+        @include responsiveTable600;
+    } 
+
+}
+
+/*========STYLING FOR TRADE HISTORY ADMIN PANEL--------*/
+.alt-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: $bgGrey;
+    border-radius: 8px;
+    margin-top: 24px;
+    h4{
+        font-weight: 400;
+    }
+}
+.trade-table{
+    width: 100%;
+    thead{
+        font-weight: normal;
+    }
+    tbody{
+        font-weight: 400;
+    }
+}
