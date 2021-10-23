@@ -76,7 +76,7 @@
     position: absolute;
     cursor: pointer;
     margin: -12px 0 0 24px;
- 
+    left: 0;
 }
 .menu-btn img{
     width: 36px;

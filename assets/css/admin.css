@@ -35,6 +35,26 @@
 .admin-nav {
   height: 72px;
   padding: 24px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.admin-nav .admin-search {
+  max-width: 400px;
+  margin-right: 12px;
+  height: 45px;
+  padding-left: 12px;
 }
 
 .admin-nav img {

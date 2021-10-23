@@ -32,6 +32,18 @@
     height: 72px;
     // border: 1px dashed red;
     padding: 24px 8px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    .admin-search{
+        max-width: 400px;
+        margin-right: 12px;
+        height: 45px;
+        padding-left: 12px;
+    }
 }
 .admin-nav img{
     margin-top: 12px;
