@@ -31,6 +31,11 @@
   background-color: #F83A3A;
 }
 
+button {
+  outline: none;
+  border: unset;
+}
+
 /*----------LOGIN PAGE STYLING----------*/
 .admin-nav {
   height: 72px;
@@ -117,6 +122,18 @@ h2 {
   .login-wrapper {
     width: 90%;
   }
+
+  .admin-nav {
+    position: fixed;
+    top: 0;
+    background-color: #0A0909;
+  }
+  .admin-nav .admin-search {
+    width: 60%;
+    margin-right: 6px;
+    height: 45px;
+    padding-left: 12px;
+  }
 }
 /*-------ADMIN INDEX PAGE STYLING--------*/
 .admin-index table {
@@ -187,6 +204,10 @@ h2 {
 }
 
 @media only screen and (max-width: 500px) {
+  .admin-wrapper {
+    margin-top: 100px;
+  }
+
   .alt-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -199,6 +220,11 @@ h2 {
 }
 .trade-table {
   width: 100%;
+}
+.trade-table button {
+  background: none;
+  font-size: 16px;
+  font-family: inherit;
 }
 .trade-table thead {
   font-weight: normal;
@@ -324,5 +350,11 @@ h2 {
 @media only screen and (max-width: 600px) {
   .dialogue-box {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 348px) {
+  .dialogue-box {
+    padding: 12px;
+    height: 270px;
   }
 }

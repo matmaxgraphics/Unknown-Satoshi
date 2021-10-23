@@ -27,6 +27,11 @@
 .btn.danger-btn{
     background-color: $danger;
 }
+button{
+    outline: none;
+    border: unset;
+
+}
 /*----------LOGIN PAGE STYLING----------*/
 .admin-nav{
     height: 72px;
@@ -77,6 +82,17 @@ h2{
     .login-wrapper{
         width: 90%;
     }
+    .admin-nav{
+        position: fixed;
+        top: 0;
+        background-color: $bgColor;
+        .admin-search{
+            width: 60%;
+            margin-right: 6px;
+            height: 45px;
+            padding-left: 12px;
+        }
+    }
 }
 
 /*-------ADMIN INDEX PAGE STYLING--------*/
@@ -115,6 +131,9 @@ h2{
     }
 }
 @media only screen and (max-width: 500px){
+    .admin-wrapper{
+        margin-top: 100px;
+    }
     .alt-nav{
         flex-direction: column;
         h4{
@@ -124,6 +143,11 @@ h2{
 }
 .trade-table{
     width: 100%;
+    button{
+        background: none;
+        font-size: 16px;
+        font-family: inherit;
+    }
     thead{
         font-weight: normal;
     }
@@ -198,5 +222,11 @@ h2{
 @media only screen and (max-width: 600px) {
     .dialogue-box{
         width: 80%;
+    }
+}
+@media only screen and (max-width: 348px) {
+    .dialogue-box{
+        padding: 12px;
+        height: 270px;
     }
 }
