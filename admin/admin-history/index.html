@@ -78,14 +78,18 @@
         </div>
       </div>
       <!--End of sidebar-->
-
-    <!-- <aside class="dialogue-box">
-        <div class="content-wrapper">
-            <p>Are you sure you want to delete this publication</p>
-            <button class="btn success-btn">Yes, I want</button>
-            <button class="btn danger-btn">No, I don't</button>
-        </div>
-    </aside>   -->
+      <main class="modal" id="id01">
+        <aside class="dialogue-box">
+            <div class="content-wrapper">
+              <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+                <p>Are you sure you want to delete this publication?</p>
+                <div class="btn-group">
+                  <button class="btn success-btn" onclick="document.getElementById('id01').style.display='none'">Yes, I want</button>
+                  <button class="btn danger-btn" onclick="document.getElementById('id01').style.display='none'">No, I don't</button>
+                </div>
+            </div>
+        </aside>
+      </main> 
 	<div class="page-wrapper admin-wrapper">		
         <section class="alt-nav">
             <h4>Manage Trade History</h4>
@@ -117,7 +121,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><a href="#"class="delete">delete</a></td>		        
+                  <td><a href="#" class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</a></td>		        
                 </tr>
           
                 <tr>
@@ -129,7 +133,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><a href="#"class="delete">delete</a></td>
+                  <td><a href="#" class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</a></td>
                 </tr>
                 
                 <tr>
@@ -141,7 +145,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><a href="#"class="delete">delete</a></td>
+                  <td><a href="#" class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</a></td>
                 </tr>
           
                 <tr>
@@ -153,7 +157,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><a href="#"class="delete">delete</a></td>
+                  <td><a href="#" class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</a></td>
                 </tr>
           
                 <tr>
@@ -165,7 +169,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><a href="#"class="delete">delete</a></td>
+                  <td><a href="#" class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</a></td>
                 </tr>
           
                 <tr>
@@ -177,7 +181,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><a href="#"class="delete">delete</a></td>
+                  <td><a href="#" class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</a></td>
                 </tr>
           
                 
@@ -190,33 +194,13 @@
 
 
 
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-          //jquery for toggle sub menus
-          $('.sub-btn').click(function(){
-            $(this).next('.sub-menu').slideToggle();
-            $(this).find('.dropdown').toggleClass('rotate');
-          });
-     
-          //jquery for expand and collapse the sidebar
-          $('.menu-btn').click(function(){
-            $('.side-bar').addClass('active');
-            $('.menu-btn').css("visibility", "hidden");
-          });
-     
-          $('.close-btn').click(function(){
-            $('.side-bar').removeClass('active');
-            $('.menu-btn').css("visibility", "visible");
-          });
-        });
-        </script>
-     
 <!--BOOTSTRAP JAVASCRIPT-->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
 
 <!--CUSTOM JAVASCRIPT-->
 <script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/modal.js"></script>
+<script src="../../assets/js/sidebar.js"></script>
 
 <!--Jquery CDN-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
