@@ -148,3 +148,20 @@
         }
       }
 }
+
+@mixin modalCloserStyling {
+    color: #aaaaaa;
+    align-self: flex-end;
+    margin-top: -20%;
+    margin-bottom: 15%;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+}

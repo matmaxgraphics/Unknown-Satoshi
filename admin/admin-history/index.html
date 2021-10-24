@@ -40,7 +40,10 @@
         <div class="menu-btn">
             <img src="../../assets/images/hamburger.png" class="fas fa-bars">
         </div>
-        <input type="search" placeholder="search for a keyword" name="search" class="input-field admin-search">
+        <form action="#" method="get">
+          <input type="search" placeholder="search for a keyword" name="search" class="input-field admin-search">
+          <!-- <button type="submit"><i class="ri-search-line"></i></button> -->
+        </form>
     </nav>
       <div class="side-bar">
         <div class="close-btn">
@@ -48,38 +51,86 @@
         </div>
         <div class="menu">
             
-          <div class="item"><a href="#">Manage History</a></div>
+          <div class="item"><a href="index.html">Manage History</a></div>
           
           <div class="item">
             <a class="sub-btn">Manage Store<i class="fas fa-angle-right dropdown"></i></a>
             <div class="sub-menu">
-                <a href="#" class="sub-item">Manage Products</a>
-                <a href="#" class="sub-item">Add Product</a>
+                <a href="../admin-store/index.html" class="sub-item">Manage Products</a>
+                <a href="../admin-store/create.html" class="sub-item">Add Product</a>
             </div>
           </div>
 
           <div class="item">
             <a class="sub-btn">Manage Courses<i class="fas fa-angle-right dropdown"></i></a>
             <div class="sub-menu">
-                <a href="#" class="sub-item">Manage Courses</a>
-                <a href="#" class="sub-item">Add COurse</a>
+                <a href="../admin-course/index.html" class="sub-item">Manage Courses</a>
+                <a href="../admin-course/create.html" class="sub-item">Add Course</a>
             </div>
           </div>
           
           <div class="item">
             <a class="sub-btn">Manage Blog<i class="fas fa-angle-right dropdown"></i></a>
             <div class="sub-menu">
-              <a href="#" class="sub-item">Manage Posts</a>
-              <a href="#" class="sub-item">Add Post</a>
-              <a href="#" class="sub-item">Manage Users</a>
-              <a href="#" class="sub-item">Add User</a>
+              <a href="../admin-blog/posts/index.html" class="sub-item">Manage Posts</a>
+              <a href="../admin-blog/posts/create.html" class="sub-item">Add Post</a>
+              <a href="../admin-blog/users/index.html" class="sub-item">Manage Users</a>
+              <a href="../admin-blog/users/create.html" class="sub-item">Add User</a>
             </div>
           </div>
           <div class="item"><a href="#"><i class="ri-logout-box-line"></i>Logout</a></div>
         </div>
       </div>
       <!--End of sidebar-->
-      <main class="modal" id="id01">
+       
+	<div class="page-wrapper admin-wrapper">		
+        <section class="alt-nav">
+            <h4>Manage Trade History</h4>
+            <button class="btn" onclick="document.getElementById('id02').style.display='block'">Add Trade History</button>
+        </section>
+
+        <main class="modal" id="id02">
+          <aside class="create-history">
+              <div class="fields-wrapper">
+                <span class="close" onclick="document.getElementById('id02').style.display='none'">&times;</span>
+                <form action="index.html" method="post">
+                  <div>
+                      <label for="coin-pair">Coin pair</label>
+                      <input type="text" name="coin-pair" id="coin-pair" class="input-field" required>
+                  </div>
+                  <div>
+                    <label for="entry">Entry</label>
+                    <input type="text" name="entry" id="entry" class="input-field" required>
+                  </div>
+                  
+                  <div>
+                    <label for="stop-loss">Stop loss</label>
+                    <input type="text" name="stop-loss" id="stop-loss" class="input-field" required>
+                  </div>
+        
+                  <div>
+                    <label for="take-profit">take profit</label>
+                    <input type="text" name="take-profit" id="take-profit" class="input-field" required>
+                  </div>
+        
+                  <div>
+                      <label for="tp-achieved">tp achieved</label>
+                      <input type="text" name="tp-achieved" id="tp-achieved" class="input-field" required>
+                  </div>
+                  
+                  <div>
+                    <label for="percent">the %</label>
+                    <input type="text" name="percent" id="percent" class="input-field" required>
+                </div>
+        
+                  <button class="btn" type="submit" name="submit-btn">Add History</button>
+                </form> 
+               </div>
+          </aside>
+       </main>
+
+        
+       <main class="modal" id="id01">
         <aside class="dialogue-box">
             <div class="content-wrapper">
               <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
@@ -90,13 +141,7 @@
                 </div>
             </div>
         </aside>
-      </main> 
-	<div class="page-wrapper admin-wrapper">		
-        <section class="alt-nav">
-            <h4>Manage Trade History</h4>
-            <button class="btn">Add Trade History</button>
-        </section>
-
+      </main>
         <section class="trade-table">
 
             <table>

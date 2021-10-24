@@ -191,21 +191,7 @@ h2{
         margin-top: 20%;
     }
     .close {
-        color: #aaaaaa;
-        align-self: flex-end;
-        margin-top: -20%;
-        margin-bottom: 15%;
-        font-size: 24px;
-        font-weight: 500;
-        transition: 0.3s;
-    }
-      
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-        transition: 0.3s;
+        @include modalCloserStyling;
     }
     p{
         margin-bottom: 48px;
@@ -228,5 +214,36 @@ h2{
     .dialogue-box{
         padding: 12px;
         height: 270px;
+    }
+}
+
+.create-history{
+    background-color: $grey-3;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 450px;
+    height: 54em;
+    margin: auto;
+    .close {
+        margin-left: 96%;
+        @include modalCloserStyling;
+    }
+    .fields-wrapper{
+        @include formStyling;
+        form{
+            width: 100%;
+            margin-top: 24px;
+        }
+    }
+   
+}
+@media only screen and (max-width: 600px) {
+    .create-history{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 348px) {
+    .create-history{
+        padding: 12px;
     }
 }
