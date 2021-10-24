@@ -44,10 +44,25 @@ button{
     width: 100%;
 
     .admin-search{
-        max-width: 400px;
+        width: 400px;
         margin-right: 12px;
         height: 45px;
         padding-left: 12px;
+    }
+
+    .search-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+        width: 40px;
+        height: 45px;
+        transition: 0.3s;
+        border-radius: 8px;
+        border-width: 0px;
+        color: #fff;
+        float: right;
+        font-size: 18px;
     }
 }
 .admin-nav img{
@@ -87,8 +102,8 @@ h2{
         top: 0;
         background-color: $bgColor;
         .admin-search{
-            width: 60%;
-            margin-right: 6px;
+            width: 80%;
+            // margin-right: 6px;
             height: 45px;
             padding-left: 12px;
         }
@@ -168,6 +183,7 @@ h2{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
+    padding-bottom: 12px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -175,6 +191,9 @@ h2{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.tradeModal{
+    display: none;
 }
 .dialogue-box{
     background-color: $grey-3;
@@ -222,7 +241,7 @@ h2{
     border-radius: 8px;
     padding: 24px;
     max-width: 450px;
-    height: 54em;
+    height: 55em;
     margin: auto;
     .close {
         margin-left: 96%;

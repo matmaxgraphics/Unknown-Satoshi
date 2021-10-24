@@ -56,10 +56,31 @@ button {
   width: 100%;
 }
 .admin-nav .admin-search {
-  max-width: 400px;
+  width: 400px;
   margin-right: 12px;
   height: 45px;
   padding-left: 12px;
+}
+.admin-nav .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EE5717;
+  width: 40px;
+  height: 45px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 8px;
+  border-width: 0px;
+  color: #fff;
+  float: right;
+  font-size: 18px;
 }
 
 .admin-nav img {
@@ -129,8 +150,7 @@ h2 {
     background-color: #0A0909;
   }
   .admin-nav .admin-search {
-    width: 60%;
-    margin-right: 6px;
+    width: 80%;
     height: 45px;
     padding-left: 12px;
   }
@@ -275,6 +295,7 @@ h2 {
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
+  padding-bottom: 12px;
   left: 0;
   top: 0;
   width: 100%;
@@ -287,6 +308,10 @@ h2 {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
+}
+
+.tradeModal {
+  display: none;
 }
 
 .dialogue-box {
@@ -362,7 +387,7 @@ h2 {
   border-radius: 8px;
   padding: 24px;
   max-width: 450px;
-  height: 54em;
+  height: 55em;
   margin: auto;
 }
 .create-history .close {
