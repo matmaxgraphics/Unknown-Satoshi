@@ -48,8 +48,8 @@ button {
           justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -149,10 +149,13 @@ h2 {
     top: 0;
     background-color: #0A0909;
   }
+  .admin-nav form {
+    margin-top: -12px;
+  }
   .admin-nav .admin-search {
     width: 80%;
+    margin-right: 6px;
     height: 45px;
-    padding-left: 12px;
   }
 }
 /*-------ADMIN INDEX PAGE STYLING--------*/

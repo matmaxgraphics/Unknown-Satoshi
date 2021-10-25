@@ -86,13 +86,13 @@
 	<div class="page-wrapper admin-wrapper">		
         <section class="alt-nav">
             <h4>Manage Trade History</h4>
-            <button class="btn" onclick="document.getElementById('id02').style.display='block'">Add Trade History</button>
+            <button class="btn" onclick="document.getElementById('tradeModal').style.display='block'">Add Trade History</button>
         </section>
 
-        <main class="modal" id="id02">
+        <main class="modal" id="tradeModal">
           <aside class="create-history">
               <div class="fields-wrapper">
-                <span class="close" onclick="document.getElementById('id02').style.display='none'">&times;</span>
+                <span class="close" onclick="document.getElementById('tradeModal').style.display='none'">&times;</span>
                 <form action="index.html" method="post">
                   <div>
                       <label for="coin-pair">Coin pair</label>
@@ -130,14 +130,14 @@
        </main>
 
         
-       <main class="modal" id="id01">
+       <main class="modal" id="dialogueModal">
         <aside class="dialogue-box">
             <div class="content-wrapper">
-              <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+              <span class="close" onclick="document.getElementById('dialogueModal').style.display='none'">&times;</span>
                 <p>Are you sure you want to delete this publication?</p>
                 <div class="btn-group">
-                  <button class="btn success-btn" onclick="document.getElementById('id01').style.display='none'">Yes, I want</button>
-                  <button class="btn danger-btn" onclick="document.getElementById('id01').style.display='none'">No, I don't</button>
+                  <button class="btn success-btn" onclick="document.getElementById('dialogueModal').style.display='none'">Yes, I want</button>
+                  <button class="btn danger-btn" onclick="document.getElementById('dialogueModal').style.display='none'">No, I don't</button>
                 </div>
             </div>
         </aside>
@@ -167,7 +167,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><button class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</button></td>		        
+                  <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>		        
                 </tr>
           
                 <tr>
@@ -179,7 +179,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><button class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</button></td>
+                  <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
                 </tr>
                 
                 <tr>
@@ -191,7 +191,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><button class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</button></td>
+                  <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
                 </tr>
           
                 <tr>
@@ -203,7 +203,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><button class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</button></td>
+                  <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
                 </tr>
           
                 <tr>
@@ -215,7 +215,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><abutton class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</button></td>
+                  <td><abutton class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
                 </tr>
           
                 <tr>
@@ -227,7 +227,7 @@
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
                   <td data-label="Action"><a href="#" class="edit">edit</a></td>
-                  <td><button class="delete" id="delBtn" onclick="document.getElementById('id01').style.display='block'">delete</button></td>
+                  <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
                 </tr>
           
                 

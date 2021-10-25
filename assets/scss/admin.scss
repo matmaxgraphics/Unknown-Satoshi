@@ -39,7 +39,7 @@ button{
     padding: 24px 8px;
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     width: 100%;
 
@@ -101,11 +101,13 @@ h2{
         position: fixed;
         top: 0;
         background-color: $bgColor;
+        form{
+            margin-top: -12px;
+        }
         .admin-search{
             width: 80%;
-            // margin-right: 6px;
+            margin-right: 6px;
             height: 45px;
-            padding-left: 12px;
         }
     }
 }
