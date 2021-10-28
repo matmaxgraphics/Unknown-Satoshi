@@ -31,27 +31,41 @@
 </head>
 <body>
 	<div class="page-wrapper">		
-        <nav class="admin-nav">
-            <img src="../assets/images/logo.png" alt="logo" class="navbar-logo">
+        <nav class="login-nav">
+            <img src="../assets/images/logo.png" alt="logo" class="navbar-logo logo-exception">
 
         </nav>
         <h2>Admin Panel</h2>
-        <section class="login-wrapper">
-            <div class="login-fields">
-                
-                <form action="login.html" method="post">
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address" required>
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" name="pword" id="pword" class="input-field" placeholder="Your password" required>
-                    </div>
+        <section class="pages-wrapper admin-index">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Pages">Trade History</td>
+                        <td data-label="Action"><a class="btn" href="admin-history/index.html">Edit</a></td>
+                    </tr>
 
-                    <button class="btn" type="submit" name="login-btn">Login</button>
-                </form>
-            </div>
+                    <tr>
+                        <td data-label="Pages">Courses</td>
+                        <td data-label="Action"><a class="btn" href="admin-course/index.html">Edit</a></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Pages">Online Store</td>
+                        <td data-label="Action"><a class="btn" href="admin-store/index.html">Edit</a></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Pages">Blog</td>
+                        <td data-label="Action"><a class="btn" href="admin-blog/index.html">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 	</div>
 
@@ -65,7 +79,7 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
 
 <!--CUSTOM JAVASCRIPT-->
-<script src="assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
 
 <!--Jquery CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

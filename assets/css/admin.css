@@ -1,4 +1,8 @@
-.edit:hover, .delete:hover {
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.edit:hover, .delete:hover, .publish:hover {
   text-decoration: underline;
   color: #F8A606;
   -webkit-transition: 0.3s;
@@ -13,6 +17,12 @@
 
 .delete {
   color: #F83A3A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.publish {
+  color: #0077B5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -81,6 +91,10 @@ button {
   color: #fff;
   float: right;
   font-size: 18px;
+}
+
+.login-nav .logo-exception {
+  margin-top: 24px;
 }
 
 .admin-nav img {
@@ -155,6 +169,22 @@ h2 {
   .admin-nav .admin-search {
     width: 80%;
     margin-right: 6px;
+    height: 45px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .admin-nav form {
+    margin-top: -12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .admin-nav .admin-search {
+    width: 70%;
+    margin-right: 2px;
     height: 45px;
   }
 }
@@ -248,6 +278,7 @@ h2 {
   background: none;
   font-size: 16px;
   font-family: inherit;
+  cursor: pointer;
 }
 .trade-table thead {
   font-weight: normal;
@@ -289,6 +320,7 @@ h2 {
     border-bottom: 0;
   }
 }
+/*==========MODAL STYLINGS========*/
 .modal {
   display: none;
   /* Hidden by default */
@@ -445,5 +477,26 @@ h2 {
 @media only screen and (max-width: 348px) {
   .create-history {
     padding: 12px;
+  }
+}
+/*========STYLING FOR ONLINE STORE ADMIN PANEL--------*/
+.store-table img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.store-table table thead tr {
+  background-color: #1E1E1E;
+}
+.store-table table tr:nth-child(even) {
+  background-color: unset;
+}
+
+@media only screen and (max-width: 592px) {
+  .store-table table tr:nth-child(even) {
+    background-color: #333333;
   }
 }

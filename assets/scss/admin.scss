@@ -1,7 +1,10 @@
 @import 'variables';
 @import "mixins";
 
-.edit, .delete{
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.edit, .delete, .publish{
     &:hover{
         text-decoration: underline;
         color: $secondayColor;
@@ -14,6 +17,10 @@
 }
 .delete{
     color: $danger;
+    transition: 0.3s;
+}
+.publish{
+    color: $neutral;
     transition: 0.3s;
 }
 .btn.success-btn, .btn.danger-btn{
@@ -64,7 +71,11 @@ button{
         float: right;
         font-size: 18px;
     }
+    
 }
+.login-nav .logo-exception{
+        margin-top: 24px;
+    }
 .admin-nav img{
     margin-top: 12px;
 }
@@ -112,6 +123,21 @@ h2{
     }
 }
 
+@media only screen and (max-width: 350px){
+    .admin-nav{
+        form{
+            margin-top: -12px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .admin-search{
+            width: 70%;
+            margin-right: 2px;
+            height: 45px;
+        }
+    }
+}
+
 /*-------ADMIN INDEX PAGE STYLING--------*/
 .admin-index table{
     border-collapse: collapse;
@@ -147,6 +173,7 @@ h2{
         font-weight: 400;
     }
 }
+
 @media only screen and (max-width: 500px){
     .admin-wrapper{
         margin-top: 100px;
@@ -164,6 +191,7 @@ h2{
         background: none;
         font-size: 16px;
         font-family: inherit;
+        cursor: pointer;
     }
     thead{
         font-weight: normal;
@@ -180,6 +208,8 @@ h2{
 
 }
 
+
+/*==========MODAL STYLINGS========*/
 .modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -266,5 +296,36 @@ h2{
 @media only screen and (max-width: 348px) {
     .create-history{
         padding: 12px;
+    }
+}
+
+
+/*========STYLING FOR ONLINE STORE ADMIN PANEL--------*/
+.store-table{
+    img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        object-position: center;
+    }
+    table{
+        thead tr{
+            background-color: $grey-4;
+        }
+        tr:nth-child(even) {
+            background-color: unset;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 592px) {
+    .store-table{
+        table{
+            tr:nth-child(even) {
+                background-color: $grey-1;
+            }
+        }
+        
     }
 }
