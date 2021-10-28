@@ -65,6 +65,9 @@ button {
           align-items: center;
   width: 100%;
 }
+.admin-nav form {
+  margin-top: -12px;
+}
 .admin-nav .admin-search {
   width: 400px;
   margin-right: 12px;
@@ -148,12 +151,12 @@ h2 {
   float: right;
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .login-wrapper {
     width: 80%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .login-wrapper {
     width: 90%;
   }
@@ -172,7 +175,7 @@ h2 {
     height: 45px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
   .admin-nav form {
     margin-top: -12px;
     display: -webkit-box;

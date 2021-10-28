@@ -49,7 +49,9 @@ button{
     flex-flow: row wrap;
     align-items: center;
     width: 100%;
-
+    form{
+        margin-top: -12px;
+    }
     .admin-search{
         width: 400px;
         margin-right: 12px;
@@ -98,13 +100,13 @@ h2{
     padding-top: 48px;
 }
 
-@media only screen and (max-width: 800px){
+@media screen and (max-width: 800px){
     .login-wrapper{
         width: 80%;
     }
 }
 
-@media only screen and (max-width: 500px){
+@media screen and (max-width: 500px){
     .login-wrapper{
         width: 90%;
     }
@@ -123,7 +125,7 @@ h2{
     }
 }
 
-@media only screen and (max-width: 350px){
+@media screen and (max-width: 350px){
     .admin-nav{
         form{
             margin-top: -12px;
