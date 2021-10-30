@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Admin Panel | Create Course</title>
+    
+	<!--SEO Control-->
+	<meta charset="utf-8" />
+    <meta name="description" content=" ">
+    <link rel="icon" href="../../assets/images/favicon.jpg">
+    <meta name="robots" content="no-index,nofollow">
+
+    <!--Viewport Control-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css" />
+    <link rel="stylesheet" href="../../assets/css/sidebar.css">
+   
+
+    <!--Bootstrap CDN-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+	<!--Remix Icon CDN-->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="admin-nav">
+        <div class="menu-btn">
+            <img src="../../assets/images/hamburger.png" class="fas fa-bars">
+        </div>
+        <form action="#" method="get">
+          <input type="search" placeholder="search for a keyword" name="search" class="input-field admin-search">
+          <button type="submit" class="search-btn"><i class="ri-search-line"></i></button>
+        </form>
+    </nav>
+      <div class="side-bar">
+        <div class="close-btn">
+            <img src="../../assets/images/close-hamburger.png" class="fas fa-times">
+        </div>
+        <div class="menu">
+            
+          <div class="item"><a href="../admin-history/index.html">Manage History</a></div>
+          
+          <div class="item">
+            <a class="sub-btn">Manage Store<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+                <a href="../admin-store/index.html" class="sub-item">Manage Products</a>
+                <a href="../admin-store/create.html" class="sub-item">Add Product</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <a class="sub-btn">Manage Courses<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+                <a href="index.html" class="sub-item">Manage Courses</a>
+                <a href="create.html" class="sub-item">Add Course</a>
+            </div>
+          </div>
+          
+          <div class="item">
+            <a class="sub-btn">Manage Blog<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+              <a href="../admin-blog/posts/index.html" class="sub-item">Manage Posts</a>
+              <a href="../admin-blog/posts/create.html" class="sub-item">Add Post</a>
+              <a href="../admin-blog/users/index.html" class="sub-item">Manage Users</a>
+              <a href="../admin-blog/users/create.html" class="sub-item">Add User</a>
+            </div>
+          </div>
+          <div class="item"><a href="#"><i class="ri-logout-box-line"></i>Logout</a></div>
+        </div>
+      </div>
+      <!--End of sidebar-->
+       
+	<div class="page-wrapper admin-wrapper">		
+        <section class="alt-nav">
+            <h4>Add Course</h4>
+            <a href="index.html" class="btn">Manage Courses</a>
+        </section> 
+        <div class="content-container">
+            <section class="add-product">
+                <div class="fields-wrapper">
+                    <form action="create.html" method="post">
+                        <div>
+                            <label for="courseTitle">Course Title</label>
+                            <input type="text" name="courseTitle" id="courseTitle" class="input-field" required>
+                        </div>
+                        
+                        <div>
+                            <label for="image">Image</label>                   
+                            <input type="file" name="image" id="image" class="input-field" accept="image/*" required>
+                        </div>
+                        
+                        <button class="btn" type="submit" name="submit-btn">Add Course</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+      
+	</div>
+
+
+
+
+
+<!--BOOTSTRAP JAVASCRIPT-->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!--CUSTOM JAVASCRIPT-->
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/sidebar.js"></script>
+
+<!--Jquery CDN-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+</body>
+</html>
