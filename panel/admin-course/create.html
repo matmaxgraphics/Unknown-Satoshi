@@ -21,8 +21,6 @@
 
     <!--Bootstrap CDN-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
- <!-- CK Editor Classic CDN -->
- <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
 
 	<!--Remix Icon CDN-->
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -91,18 +89,22 @@
             <a href="index.html" class="btn">Manage Courses</a>
         </section> 
         <div class="content-container">
-            <section class="add-post">
+            <section class="add-product">
                 <div class="fields-wrapper">
                     <form action="create.html" method="post">
                         <div>
                             <label for="courseTitle">Course Title</label>
-                            <input type="text" name="courseTitle" id="courseEditor" class="input-field" required>
+                            <input type="text" name="courseTitle" id="courseTitle" class="input-field" required>
+                        </div>
+                        <div>
+                          <label for="courseLink">Course Link</label>
+                          <input type="text" name="courseLink" id="courseLink" class="input-field" required>
                         </div>
                         
-                        <main class="margin-top">
+                        <div>
                             <label for="image">Image</label>                   
                             <input type="file" name="image" id="image" class="input-field" accept="image/*" required>
-                        </main>
+                        </div>
                         
                         <button class="btn" type="submit" name="submit-btn">Add Course</button>
                     </form>
@@ -124,14 +126,6 @@
 <!--CUSTOM JAVASCRIPT-->
 <script src="../../assets/js/script.js"></script>
 <script src="../../assets/js/sidebar.js"></script>
-
-<script>
-  ClassicEditor
-      .create( document.querySelector( '#courseEditor' ) )
-      .catch( error => {
-          console.error( error );
-      } );
-</script>
 
 <!--Jquery CDN-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
