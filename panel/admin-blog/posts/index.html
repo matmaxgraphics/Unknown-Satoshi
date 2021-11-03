@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Admin Panel | Manage Users</title>
+	<title>Admin Panel | Manage Posts</title>
     
 	<!--SEO Control-->
 	<meta charset="utf-8" />
@@ -72,10 +72,10 @@
           <div class="item">
             <a class="sub-btn">Manage Blog<i class="fas fa-angle-right dropdown"></i></a>
             <div class="sub-menu">
-              <a href="../posts/index.html" class="sub-item">Manage Posts</a>
-              <a href="../posts/create.html" class="sub-item">Add Post</a>
-              <a href="index.html" class="sub-item">Manage Users</a>
-              <a href="create.html" class="sub-item">Add User</a>
+              <a href="index.html" class="sub-item">Manage Posts</a>
+              <a href="create.html" class="sub-item">Add Post</a>
+              <a href="../users/index.html" class="sub-item">Manage Users</a>
+              <a href="../users/create.html" class="sub-item">Add User</a>
             </div>
           </div>
           <div class="item"><a href="#"><i class="ri-logout-box-line"></i>Logout</a></div>
@@ -85,8 +85,8 @@
        
       <div class="page-wrapper admin-wrapper course-wrapper">		
         <section class="alt-nav">
-            <h4>Manage Users</h4>
-            <a href="create.html" class="btn">Add User</a>
+            <h4>Manage Posts</h4>
+            <a href="create.html" class="btn">Add Post</a>
         </section>
 
        <main class="modal" id="dialogueModal">
@@ -106,50 +106,55 @@
           <thead>
             <tr>
               <th scope="col">S/N</th>
-              <th scope="col">Username</th>
-              <th scope="col">Role</th>
+              <th scope="col">Post Title</th>
+              <th scope="col">Author</th>
               <th scope="col" colspan="3">Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td data-label="S/N">1</td>
-              <td data-label="Username">Stephen</td>
-              <td data-label="Role">Admin</td>
+              <td data-label="post Title">The act of war</td>
+              <td data-label="Author">Buhari</td>
               <td data-label="Action"><a href="#" class="edit">edit</a></td>
               <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
+              <td><button class="publish" id="publishBtn">unpublish</button></td>
             </tr>
       
             <tr>
                 <td data-label="S/N">2</td>
-                <td data-label="Username">Peter</td>
-                <td data-label="Role">Author</td>
+                <td data-label="post Title">Effect of Noise Pollution</td>
+                <td data-label="Author">El Rufai</td>
                 <td data-label="Action"><a href="#" class="edit">edit</a></td>
                 <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
+                <td><button class="publish" id="publishBtn">unpublish</button></td>
             </tr>
             
             <tr>
                 <td data-label="S/N">3</td>
-                <td data-label="Username">Satoshi</td>
-                <td data-label="Role">Author</td>
+                <td data-label="post Title">Creating a Binance account the right way</td>
+                <td data-label="Author">Obasanjo</td>
                 <td data-label="Action"><a href="#" class="edit">edit</a></td>
                 <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
+                <td><button class="publish" id="publishBtn">unpublish</button></td>
             </tr>
       
             <tr>
               <td data-label="S/N">4</td>
-              <td data-label="Username">Elon Musk</td>
-              <td data-label="Role">Admin</td>
+              <td data-label="post Title">100 Reasons to buy the dip</td>
+              <td data-label="Author">Fashola</td>
               <td data-label="Action"><a href="#" class="edit">edit</a></td>
               <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
+              <td><button class="publish" id="publishBtn">unpublish</button></td>
             </tr>
       
             <tr>
-             <td data-label="S/N">5</td>
-             <td data-label="Username">Albert</td>
-             <td data-label="Role">Author</td>
-             <td data-label="Action"><a href="#" class="edit">edit</a></td>
-             <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
+              <td data-label="S/N">5</td>
+              <td data-label="post Title">Eating an Apple a day</td>
+              <td data-label="Author">Sanwo Olu</td>
+              <td data-label="Action"><a href="#" class="edit">edit</a></td>
+              <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>
+              <td><button class="publish" id="publishBtn">unpublish</button></td>
             </tr>
             
           </tbody>
@@ -166,6 +171,7 @@
 
 <!--CUSTOM JAVASCRIPT-->
 <script src="../../../assets/js/script.js"></script>
+<script src="../../../assets/js/modal.js"></script>
 <script src="../../../assets/js/sidebar.js"></script>
 
 <!--Jquery CDN-->
