@@ -442,11 +442,20 @@ h2{
                 width: 100%;
             }
         }
-        textarea{
+
+        .ck-content{
+            background-color: $inputGrey;
             color: #000;
-            background-color: #fff;
+        }
+        .ck-link_selected{
+            text-decoration: underline;
+            color: #000;
+            background-color: unset;
+        }
+        .form-body{
             resize: both;
             height: 200px;
+            background-color: $inputGrey;
         }
         input[type=file]{
             background-color: $lightGrey;

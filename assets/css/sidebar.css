@@ -20,6 +20,7 @@
 .side-bar .menu{
     width: 100%;
     margin-top: 72px;
+    z-index: 1;
 }
 
 .side-bar .menu .item{

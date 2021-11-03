@@ -644,11 +644,19 @@ h2 {
   margin-top: 8px;
   width: 100%;
 }
-.add-post .fields-wrapper textarea {
+.add-post .fields-wrapper .ck-content {
+  background-color: #434343;
   color: #000;
-  background-color: #fff;
+}
+.add-post .fields-wrapper .ck-link_selected {
+  text-decoration: underline;
+  color: #000;
+  background-color: unset;
+}
+.add-post .fields-wrapper .form-body {
   resize: both;
   height: 200px;
+  background-color: #434343;
 }
 .add-post .fields-wrapper input[type=file] {
   background-color: #C4C4C4;

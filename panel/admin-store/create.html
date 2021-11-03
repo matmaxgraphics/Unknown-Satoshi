@@ -21,6 +21,8 @@
 
     <!--Bootstrap CDN-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- CK Editor Classic CDN -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
 
 	<!--Remix Icon CDN-->
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -28,7 +30,6 @@
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-
 	<!--Google font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,28 +90,28 @@
             <a href="index.html" class="btn">Manage Products</a>
         </section> 
         <div class="content-container">
-            <section class="add-product">
+            <section class="add-post">
                 <div class="fields-wrapper">
                     <form action="create.html" method="post">
                         <div>
                             <label for="productName">Product Name</label>
-                            <input type="text" name="productName" id="productName" class="input-field" required>
+                            <input type="text" name="productName" id="storeEditor" class="input-field" required>
                         </div>
-                        <div>
+                        <main class="margin-top">
                             <label for="price">Price</label>
                             <input type="number" name="price" id="price" class="input-field" required>
-                        </div>
-                        <div>
+                        </main>
+                        <main>
                             <label for="image">Image</label>                   
                             <input type="file" name="image" id="image" class="input-field" accept="image/*" required>
-                        </div>
-                        <div>
+                        </main>
+                        <main>
                             <label for="productCat">Product Category</label>
                             <select name="productCat" class="input-field">
                                 <option value="merch">Merch</option>
                                 <option value="nft">NFTs</option>
                             </select>
-                        </div>
+                        </main>
 
                         <button class="btn" type="submit" name="submit-btn">Add Product</button>
                     </form>
@@ -132,6 +133,14 @@
 <!--CUSTOM JAVASCRIPT-->
 <script src="../../assets/js/script.js"></script>
 <script src="../../assets/js/sidebar.js"></script>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#storeEditor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+  </script>
 
 <!--Jquery CDN-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
