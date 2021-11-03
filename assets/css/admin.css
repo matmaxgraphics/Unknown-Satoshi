@@ -90,7 +90,7 @@ button {
           align-items: center;
   background-color: #EE5717;
   width: 40px;
-  height: 45px;
+  height: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 8px;
@@ -98,6 +98,9 @@ button {
   color: #fff;
   float: right;
   font-size: 18px;
+  position: absolute;
+  right: 24px;
+  top: 14.5px;
 }
 
 .login-nav .logo-exception {
