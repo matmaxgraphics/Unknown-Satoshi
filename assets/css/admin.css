@@ -184,15 +184,9 @@ h2 {
 @media screen and (max-width: 350px) {
   .admin-nav form {
     margin-top: -12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
   .admin-nav .admin-search {
-    width: 200px;
+    width: 150px;
     height: 45px;
   }
 }
