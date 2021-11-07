@@ -341,7 +341,15 @@ body{
       max-width: 980px;
       margin: 120px 0 20px 0px;
       padding: 0 15px;
-    line-height: 1.2;
+    h1{
+        line-height: 1.1;
+        margin-bottom: 24px;
+    }
+    p{
+        max-width: 600px;
+        text-align: center;
+        margin: auto;
+    }
   }
   .hero-section .hero-img{
     width: 80%;
@@ -385,34 +393,45 @@ body{
 }
   /*=====END OF HERO SECTION STYLING=====*/
 
-  /*=====TRADING SIGNAL SECTION STYLING====*/
-.trading-section{
-    @include row-column;
-    .description-container{
-        @include column-description;
-    }
-    .image-container{
-        @include column-img;
-        img{
-            width: 100%;
-            border-radius: 12px;
-        }
-    }
-}
-@media only screen and (max-width: 700px){
-	.trading-section{
-        @include responsive;
 
-        .description-container, .image-container{
-            width: 100%;
-            padding:unset;
+
+  /*==========BLOG SECTION STYLING=======*/
+  .blog-section{
+    margin-top: 123px;
+    h2{
+        margin-bottom: 12px;
+    }
+    h4{
+        max-width: 700px;
+        font-weight: normal;
+        margin-bottom: 48px;
+    }
+    .blog-post__container{
+        @include responsive-grid;
+    }
+    .blog-post__card{
+        max-width: 360px;
+        @include card-properties;
+        background: $blogCardGrey;
+        .text-container{
+            padding: 12px;
         }
-        .image-container{
-            margin-top: 24px;
+        h5{
+            color: $primaryColor;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        a{
+            color: inherit;
         }
     }
 }
-/*=====END OF TRADING SIGNAL SECTION STYLING====*/
+/*========-END OF BLOG SECTION STYLING=========*/
+
 
 
 /*=====COMMUNITY FEATURES SECTION STYLING====*/
@@ -468,9 +487,103 @@ body{
 
     }
 }
+/*=====END OF COMMUNITY FEATURES SECTION STYLING====*/
+
+
+/*=====SUBSCRIPTION SECTION STYLING====*/
+.subscription-section{
+    margin-top: 114px;
+    background-color: $bgGrey;
+    width: 100%;
+    border-radius: 8px;
+    padding: 24px;
+    padding-bottom: 36px;
+}
+.subscription-container{    
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    h2{
+        margin-bottom: 12px;
+    }
+    p{
+        margin-bottom: 48px
+    }
+}
+/*=====END OF SUBSCRIPTION SECTION STYLING====*/
 
 
 
+/*============COURSE SECTION STYLING========*/
+.course-section{
+    margin-top: 123px;
+    h2{
+        max-width: 840px;
+        margin-bottom: 48px;
+    }
+
+    .course-container{
+        @include responsive-grid;
+    }
+    .course-container__item{
+        @include card-properties;
+        &:hover{
+            text-decoration: underline;
+        }
+        img{
+            transition: 0.3s;
+            &:hover{
+                transform: scale(0.97);
+                transition: 0.3s;
+            }
+        }
+    }
+
+}
+/*============END COURSE SECTION STYLING========*/
+
+
+/*=========TRADE HISTORY SECTION STYLING=======*/
+.history-section{
+    @include row-column;
+    .description-container{
+        @include column-description;
+        h2{
+            width: 80%;
+            line-height: 1.2;
+        }
+        p{
+            margin-bottom: 36px;
+        }
+    }
+    .image-container{
+        @include column-img;
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+	.history-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+        }
+        .image-container{
+            margin-top: 48px;
+        }
+    }
+}
+/*=========END OF TRADE HISTORY SECTION STYLING=======*/
+
+
+
+
+
+/*=====TESTIMONIAL SECTION STYLING====*/
 .testimonial-section{
     margin-top: 124px;
     h2{
@@ -502,19 +615,16 @@ body{
     }
 
 }
+/*=====END OF TESTIMONIAL SECTION STYLING====*/
 
 
-
-.history-section{
+ /*=====TRADING SIGNAL SECTION STYLING====*/
+ .trading-section{
     @include row-column;
     .description-container{
         @include column-description;
-        h2{
-            width: 80%;
-            line-height: 1.2;
-        }
         p{
-            margin-bottom: 24px;
+            margin-bottom: 36px;
         }
     }
     .image-container{
@@ -525,78 +635,23 @@ body{
         }
     }
 }
-
 @media only screen and (max-width: 700px){
-	.history-section{
+	.trading-section{
         @include responsive;
 
         .description-container, .image-container{
             width: 100%;
+            padding:unset;
         }
         .image-container{
-            margin-top: 36px;
+            margin-top: 24px;
         }
     }
 }
+/*=====END OF TRADING SIGNAL SECTION STYLING====*/
 
 
-
-.blog-section{
-    margin-top: 123px;
-    h2{
-        margin-bottom: 48px;
-    }
-    .blog-post__container{
-        @include responsive-grid;
-    }
-    .blog-post__card{
-        @include card-properties;
-        background: $blogCardGrey;
-        .text-container{
-            padding: 12px;
-        }
-        h5{
-            color: $primaryColor;
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-        a{
-            color: inherit;
-        }
-    }
-}
-
-.course-section{
-    margin-top: 123px;
-    h2{
-        max-width: 840px;
-        margin-bottom: 48px;
-    }
-
-    .course-container{
-        @include responsive-grid;
-    }
-    .course-container__item{
-        @include card-properties;
-        &:hover{
-            text-decoration: underline;
-        }
-        img{
-            transition: 0.3s;
-            &:hover{
-                transform: scale(0.97);
-                transition: 0.3s;
-            }
-        }
-    }
-
-}
-
-
+/*=====NEWSLETTER SECTION STYLING====*/
 .newsletter-section{
     margin-top: 123px;
     p{
@@ -626,6 +681,7 @@ body{
         }
     }
 }
+/*=====END OF NEWSLETTER SECTION STYLING====*/
 
 
 .join-community{
@@ -636,8 +692,13 @@ body{
     
     h2{
         text-align: center;
-        margin-bottom: 36px;
+        margin-bottom: 24px;
         max-width: 965px;
+    }
+    P{
+        margin-bottom: 36px;
+        max-width: 700px;
+        text-align: center;
     }
 }
 

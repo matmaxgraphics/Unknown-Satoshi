@@ -268,7 +268,15 @@ textarea {
   max-width: 980px;
   margin: 120px 0 20px 0px;
   padding: 0 15px;
-  line-height: 1.2;
+}
+.hero-section .hero-section__title h1 {
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.hero-section .hero-section__title p {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
 }
 
 .hero-section .hero-img {
@@ -313,61 +321,58 @@ textarea {
   }
 }
 /*=====END OF HERO SECTION STYLING=====*/
-/*=====TRADING SIGNAL SECTION STYLING====*/
-.trading-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 10px 24px;
-  width: 100%;
-  margin-top: 96px;
+/*==========BLOG SECTION STYLING=======*/
+.blog-section {
+  margin-top: 123px;
 }
-.trading-section h2 {
-  line-height: 1.2;
+.blog-section h2 {
+  margin-bottom: 12px;
+}
+.blog-section h4 {
+  max-width: 700px;
+  font-weight: normal;
+  margin-bottom: 48px;
+}
+.blog-section .blog-post__container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 0.7rem;
+  place-items: center;
+}
+.blog-section .blog-post__card {
+  max-width: 360px;
+  max-width: 360px;
+  border-radius: 8px;
   margin-bottom: 24px;
+  background: #1A1919;
 }
-.trading-section .description-container {
-  padding-right: 24px;
-}
-.trading-section .description-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-}
-.trading-section .image-container {
-  width: 50%;
-}
-.trading-section .image-container img {
+.blog-section .blog-post__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
-  border-radius: 12px;
+  height: 230px;
+  border-radius: 8px;
+}
+.blog-section .blog-post__card .text-container {
+  padding: 12px;
+}
+.blog-section .blog-post__card h5 {
+  color: #EE5717;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.blog-section .blog-post__card h5:hover {
+  text-decoration: underline;
+}
+.blog-section .blog-post__card a {
+  color: inherit;
 }
 
-@media only screen and (max-width: 700px) {
-  .trading-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .trading-section .description-container, .trading-section .image-container {
-    width: 100%;
-    padding: unset;
-  }
-  .trading-section .image-container {
-    margin-top: 24px;
-  }
-}
-/*=====END OF TRADING SIGNAL SECTION STYLING====*/
+/*========-END OF BLOG SECTION STYLING=========*/
 /*=====COMMUNITY FEATURES SECTION STYLING====*/
 .feature-section {
   display: -webkit-box;
@@ -457,37 +462,75 @@ textarea {
     padding: unset;
   }
 }
-.testimonial-section {
-  margin-top: 124px;
-}
-.testimonial-section h2 {
-  max-width: 930px;
-  margin-bottom: 24px;
-}
-.testimonial-section .owl-carousel {
+/*=====END OF COMMUNITY FEATURES SECTION STYLING====*/
+/*=====SUBSCRIPTION SECTION STYLING====*/
+.subscription-section {
+  margin-top: 114px;
   background-color: #1D1D1D;
-  border-radius: 12px;
+  width: 100%;
+  border-radius: 8px;
   padding: 24px;
-  padding-left: 50px;
-}
-.testimonial-section .testimonial-container {
-  max-width: 350px;
-  margin-bottom: 48px;
-}
-.testimonial-section .testimonial-container .star-rating {
-  margin-bottom: 12px;
-}
-.testimonial-section .testimonial-container .ri-star-fill {
-  color: #F8A606;
-}
-.testimonial-section .testimonial-container .ri-star-line {
-  color: #F8A606;
-  opacity: 0.6;
-}
-.testimonial-section .testimonial-container main p {
-  margin-bottom: 24px;
+  padding-bottom: 36px;
 }
 
+.subscription-container {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+.subscription-container h2 {
+  margin-bottom: 12px;
+}
+.subscription-container p {
+  margin-bottom: 48px;
+}
+
+/*=====END OF SUBSCRIPTION SECTION STYLING====*/
+/*============COURSE SECTION STYLING========*/
+.course-section {
+  margin-top: 123px;
+}
+.course-section h2 {
+  max-width: 840px;
+  margin-bottom: 48px;
+}
+.course-section .course-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 0.7rem;
+  place-items: center;
+}
+.course-section .course-container__item {
+  max-width: 360px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.course-section .course-container__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 230px;
+  border-radius: 8px;
+}
+.course-section .course-container__item:hover {
+  text-decoration: underline;
+}
+.course-section .course-container__item img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.course-section .course-container__item img:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*============END COURSE SECTION STYLING========*/
+/*=========TRADE HISTORY SECTION STYLING=======*/
 .history-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,7 +565,7 @@ textarea {
   line-height: 1.2;
 }
 .history-section .description-container p {
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 .history-section .image-container {
   width: 50%;
@@ -544,95 +587,102 @@ textarea {
     width: 100%;
   }
   .history-section .image-container {
-    margin-top: 36px;
+    margin-top: 48px;
   }
 }
-.blog-section {
-  margin-top: 123px;
+/*=========END OF TRADE HISTORY SECTION STYLING=======*/
+/*=====TESTIMONIAL SECTION STYLING====*/
+.testimonial-section {
+  margin-top: 124px;
 }
-.blog-section h2 {
+.testimonial-section h2 {
+  max-width: 930px;
+  margin-bottom: 24px;
+}
+.testimonial-section .owl-carousel {
+  background-color: #1D1D1D;
+  border-radius: 12px;
+  padding: 24px;
+  padding-left: 50px;
+}
+.testimonial-section .testimonial-container {
+  max-width: 350px;
   margin-bottom: 48px;
 }
-.blog-section .blog-post__container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 0.7rem;
-  place-items: center;
-}
-.blog-section .blog-post__card {
-  width: 290px;
-  border-radius: 8px;
-  margin-bottom: 24px;
-  background: #1A1919;
-}
-.blog-section .blog-post__card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 290px;
-  height: 230px;
-  border-radius: 8px;
-}
-.blog-section .blog-post__card .text-container {
-  padding: 12px;
-}
-.blog-section .blog-post__card h5 {
-  color: #EE5717;
-  font-size: 18px;
-  font-weight: 600;
+.testimonial-section .testimonial-container .star-rating {
   margin-bottom: 12px;
 }
-.blog-section .blog-post__card h5:hover {
-  text-decoration: underline;
+.testimonial-section .testimonial-container .ri-star-fill {
+  color: #F8A606;
 }
-.blog-section .blog-post__card a {
-  color: inherit;
+.testimonial-section .testimonial-container .ri-star-line {
+  color: #F8A606;
+  opacity: 0.6;
 }
-
-.course-section {
-  margin-top: 123px;
-}
-.course-section h2 {
-  max-width: 840px;
-  margin-bottom: 48px;
-}
-.course-section .course-container {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 0.7rem;
-  place-items: center;
-}
-.course-section .course-container__item {
-  width: 290px;
-  border-radius: 8px;
+.testimonial-section .testimonial-container main p {
   margin-bottom: 24px;
 }
-.course-section .course-container__item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 290px;
-  height: 230px;
-  border-radius: 8px;
+
+/*=====END OF TESTIMONIAL SECTION STYLING====*/
+/*=====TRADING SIGNAL SECTION STYLING====*/
+.trading-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 24px;
+  width: 100%;
+  margin-top: 96px;
 }
-.course-section .course-container__item:hover {
-  text-decoration: underline;
+.trading-section h2 {
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
-.course-section .course-container__item img {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.trading-section .description-container {
+  padding-right: 24px;
 }
-.course-section .course-container__item img:hover {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.trading-section .description-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+.trading-section .description-container p {
+  margin-bottom: 36px;
+}
+.trading-section .image-container {
+  width: 50%;
+}
+.trading-section .image-container img {
+  width: 100%;
+  border-radius: 12px;
 }
 
+@media only screen and (max-width: 700px) {
+  .trading-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .trading-section .description-container, .trading-section .image-container {
+    width: 100%;
+    padding: unset;
+  }
+  .trading-section .image-container {
+    margin-top: 24px;
+  }
+}
+/*=====END OF TRADING SIGNAL SECTION STYLING====*/
+/*=====NEWSLETTER SECTION STYLING====*/
 .newsletter-section {
   margin-top: 123px;
 }
@@ -672,6 +722,7 @@ textarea {
     margin-bottom: 36px;
   }
 }
+/*=====END OF NEWSLETTER SECTION STYLING====*/
 .join-community {
   display: -ms-grid;
   display: grid;
@@ -680,8 +731,13 @@ textarea {
 }
 .join-community h2 {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   max-width: 965px;
+}
+.join-community P {
+  margin-bottom: 36px;
+  max-width: 700px;
+  text-align: center;
 }
 
 footer {
