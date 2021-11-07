@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Admin Panel | Edit Product</title>
+	<title>Admin Panel | Create Trade History</title>
     
 	<!--SEO Control-->
 	<meta charset="utf-8" />
@@ -51,19 +51,19 @@
         </div>
         <div class="menu">
             
-          <div class="item">
-            <a class="sub-btn">Manage History<i class="fas fa-angle-right dropdown"></i></a>
-            <div class="sub-menu">
-                <a href="../admin-history/index.html" class="sub-item">Manage History</a>
-                <a href="../admin-history/create.html" class="sub-item">Add History</a>
+            <div class="item">
+                <a class="sub-btn">Manage History<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="index.html" class="sub-item">Manage History</a>
+                    <a href="create.html" class="sub-item">Add History</a>
+                </div>
             </div>
-          </div>
           
           <div class="item">
             <a class="sub-btn">Manage Store<i class="fas fa-angle-right dropdown"></i></a>
             <div class="sub-menu">
-                <a href="index.html" class="sub-item">Manage Products</a>
-                <a href="create.html" class="sub-item">Add Product</a>
+                <a href="../admin-store/index.html" class="sub-item">Manage Products</a>
+                <a href="../admin-store/create.html" class="sub-item">Add Product</a>
             </div>
           </div>
 
@@ -91,40 +91,47 @@
        
 	<div class="page-wrapper admin-wrapper">		
         <section class="alt-nav">
-            <h4>Edit Product</h4>
-            <a href="index.html" class="btn">Manage Products</a>
+            <h4>Add History</h4>
+            <a href="index.html" class="btn">Manage History</a>
         </section> 
         <div class="content-container">
             <section class="add-product">
-                <div class="fields-wrapper">
-                    <form action="create.html" method="post">
+                <aside class="create-history">
+                    <div class="fields-wrapper">
+                      <form action="create.html" method="post">
                         <div>
-                            <label for="productName">Product Name</label>
-                            <input type="text" name="productName" id="productName" class="input-field" value="Customized underdog hoodie" required>
+                            <label for="coin-pair">Coin pair</label>
+                            <input type="text" name="coin-pair" id="coin-pair" class="input-field" required>
                         </div>
                         <div>
-                            <label for="productLink">Product Link</label>
-                            <input type="url" name="productLink" id="productLink" class="input-field" value="amazon.com" required>
+                          <label for="entry">Entry</label>
+                          <input type="text" name="entry" id="entry" class="input-field" required>
                         </div>
+                        
                         <div>
-                            <label for="price">Price</label>
-                            <input type="number" name="price" id="price" class="input-field" value="60" required>
+                          <label for="stop-loss">Stop loss</label>
+                          <input type="text" name="stop-loss" id="stop-loss" class="input-field" required>
                         </div>
+              
                         <div>
-                            <label for="image">Image</label>                   
-                            <input type="file" name="image" id="image" class="input-field" accept="image/*" required>
+                          <label for="take-profit">take profit</label>
+                          <input type="text" name="take-profit" id="take-profit" class="input-field" required>
                         </div>
+              
                         <div>
-                            <label for="productCat">Product Category</label>
-                            <select name="productCat" class="input-field">
-                                <option value="merch">Merch</option>
-                                <option value="nft">NFTs</option>
-                            </select>
+                            <label for="tp-achieved">tp achieved</label>
+                            <input type="text" name="tp-achieved" id="tp-achieved" class="input-field" required>
                         </div>
-
-                        <button class="btn" type="submit" name="submit-btn">Add Product</button>
-                    </form>
-                </div>
+                        
+                        <div>
+                          <label for="percent">the %</label>
+                          <input type="text" name="percent" id="percent" class="input-field" required>
+                      </div>
+              
+                        <button class="btn" type="submit" name="submit-btn">Add History</button>
+                      </form> 
+                     </div>
+                </aside>
             </section>
 
         </div>

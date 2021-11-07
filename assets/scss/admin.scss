@@ -231,9 +231,6 @@ h2{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.tradeModal{
-    display: none;
-}
 .dialogue-box{
     background-color: $grey-3;
     border-radius: 8px;
@@ -276,20 +273,10 @@ h2{
 }
 
 .create-history{
-    background-color: $grey-3;
-    border-radius: 8px;
-    padding: 24px;
-    max-width: 450px;
-    height: 55em;
-    margin: auto;
-    .close {
-        margin-left: 96%;
-        @include modalCloserStyling;
-    }
     .fields-wrapper{
         @include formStyling;
         form{
-            width: 100%;
+            width: 80%;
             margin-top: 24px;
         }
     }

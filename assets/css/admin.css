@@ -348,10 +348,6 @@ h2 {
   /* Black w/ opacity */
 }
 
-.tradeModal {
-  display: none;
-}
-
 .dialogue-box {
   background-color: #1A1A1A;
   border-radius: 8px;
@@ -420,33 +416,6 @@ h2 {
     height: 270px;
   }
 }
-.create-history {
-  background-color: #1A1A1A;
-  border-radius: 8px;
-  padding: 24px;
-  max-width: 450px;
-  height: 55em;
-  margin: auto;
-}
-.create-history .close {
-  margin-left: 96%;
-  color: #aaaaaa;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-top: -20%;
-  margin-bottom: 15%;
-  font-size: 24px;
-  font-weight: 500;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.create-history .close:hover, .create-history .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
 .create-history .fields-wrapper form {
   width: 80%;
 }
@@ -468,7 +437,7 @@ h2 {
   float: right;
 }
 .create-history .fields-wrapper form {
-  width: 100%;
+  width: 80%;
   margin-top: 24px;
 }
 
