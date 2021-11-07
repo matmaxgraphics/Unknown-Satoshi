@@ -433,63 +433,6 @@ body{
 /*========-END OF BLOG SECTION STYLING=========*/
 
 
-
-/*=====COMMUNITY FEATURES SECTION STYLING====*/
-.feature-section{
-    @include row-column;
-    .description-container{
-        @include column-description;
-        margin-top: 36px;
-    }
-    .image-container{
-        @include column-img;
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
-        .feature-section__item{
-            width: 280px;
-            margin-top: 36px;
-        }
-        h4{
-            color: $secondayColor;
-            margin: 12px 0 8px 0;
-        }
-        .feature-section_icon{
-            color: #fff;
-        }
-        .ri-community-line{
-            background-color: #6A6FDC;
-            @include icon-preset;
-        }
-        .ri-bit-coin-line{
-            background-color: #EE5717;
-            @include icon-preset;
-        }
-        .ri-line-chart-line{
-            background-color: #38DF35;
-            @include icon-preset;
-        }
-        .ri-store-line{
-            background-color: #F83A89;
-            @include icon-preset;
-        }
-    }
-}
-
-@media only screen and (max-width: 700px){
-	.feature-section{
-        @include responsive;
-
-        .description-container, .image-container{
-            width: 100%;
-            padding: unset;
-        }
-
-    }
-}
-/*=====END OF COMMUNITY FEATURES SECTION STYLING====*/
-
-
 /*=====SUBSCRIPTION SECTION STYLING====*/
 .subscription-section{
     margin-top: 114px;
@@ -538,7 +481,12 @@ body{
             }
         }
     }
-
+    .course-btn__container{
+        display: grid;
+        place-items: center;
+        margin-top: 24px;
+        margin-bottom: 60px;
+    }
 }
 /*============END COURSE SECTION STYLING========*/
 

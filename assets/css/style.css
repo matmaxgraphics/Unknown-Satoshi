@@ -373,96 +373,6 @@ textarea {
 }
 
 /*========-END OF BLOG SECTION STYLING=========*/
-/*=====COMMUNITY FEATURES SECTION STYLING====*/
-.feature-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 10px 24px;
-  width: 100%;
-  margin-top: 96px;
-}
-.feature-section h2 {
-  line-height: 1.2;
-  margin-bottom: 24px;
-}
-.feature-section .description-container {
-  padding-right: 24px;
-}
-.feature-section .description-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  margin-top: 36px;
-}
-.feature-section .image-container {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-.feature-section .image-container .feature-section__item {
-  width: 280px;
-  margin-top: 36px;
-}
-.feature-section .image-container h4 {
-  color: #F8A606;
-  margin: 12px 0 8px 0;
-}
-.feature-section .image-container .feature-section_icon {
-  color: #fff;
-}
-.feature-section .image-container .ri-community-line {
-  background-color: #6A6FDC;
-  padding: 8px;
-  border-radius: 8px;
-}
-.feature-section .image-container .ri-bit-coin-line {
-  background-color: #EE5717;
-  padding: 8px;
-  border-radius: 8px;
-}
-.feature-section .image-container .ri-line-chart-line {
-  background-color: #38DF35;
-  padding: 8px;
-  border-radius: 8px;
-}
-.feature-section .image-container .ri-store-line {
-  background-color: #F83A89;
-  padding: 8px;
-  border-radius: 8px;
-}
-
-@media only screen and (max-width: 700px) {
-  .feature-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .feature-section .description-container, .feature-section .image-container {
-    width: 100%;
-    padding: unset;
-  }
-}
-/*=====END OF COMMUNITY FEATURES SECTION STYLING====*/
 /*=====SUBSCRIPTION SECTION STYLING====*/
 .subscription-section {
   margin-top: 114px;
@@ -527,6 +437,13 @@ textarea {
           transform: scale(0.97);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.course-section .course-btn__container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 24px;
+  margin-bottom: 60px;
 }
 
 /*============END COURSE SECTION STYLING========*/

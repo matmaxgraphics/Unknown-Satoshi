@@ -89,7 +89,9 @@
             <button class="btn" onclick="document.getElementById('tradeModal').style.display='block'">Add Trade History</button>
         </section>
 
-        <main class="modal" id="tradeModal">
+
+        <!--MODAL POPUP FOR CREATING HISTORY-->
+        <main class="modal tradeModal" id="tradeModal">
           <aside class="create-history">
               <div class="fields-wrapper">
                 <span class="close" onclick="document.getElementById('tradeModal').style.display='none'">&times;</span>
@@ -127,7 +129,49 @@
                 </form> 
                </div>
           </aside>
-       </main>
+        </main>
+
+
+        <!--MODAL POPUP FOR EDITING HISTORY-->
+        <main class="modal" id="editTradeModal">
+          <aside class="create-history">
+              <div class="fields-wrapper">
+                <span class="close" onclick="document.getElementById('editTradeModal').style.display='none'">&times;</span>
+                <form action="index.html" method="post">
+                  <div>
+                      <label for="coin-pair">Coin pair</label>
+                      <input type="text" name="coin-pair" id="coin-pair" class="input-field" value="BTC/USDT" required>
+                  </div>
+                  <div>
+                    <label for="entry">Entry</label>
+                    <input type="text" name="entry" id="entry" class="input-field" value="$2000" required>
+                  </div>
+                  
+                  <div>
+                    <label for="stop-loss">Stop loss</label>
+                    <input type="text" name="stop-loss" id="stop-loss" class="input-field" value="50" required>
+                  </div>
+        
+                  <div>
+                    <label for="take-profit">take profit</label>
+                    <input type="text" name="take-profit" id="take-profit" class="input-field" value="50" required>
+                  </div>
+        
+                  <div>
+                      <label for="tp-achieved">tp achieved</label>
+                      <input type="text" name="tp-achieved" id="tp-achieved" class="input-field" value="50" required>
+                  </div>
+                  
+                  <div>
+                    <label for="percent">the %</label>
+                    <input type="text" name="percent" id="percent" class="input-field" value="50" required>
+                </div>
+        
+                  <button class="btn" type="submit" name="submit-btn">Add History</button>
+                </form> 
+               </div>
+          </aside>
+        </main>
 
         
        <main class="modal" id="dialogueModal">
@@ -167,7 +211,7 @@
                   <td data-label="tp target">50</td>
                   <td data-label="tp achieved">50</td>
                   <td data-label="% profit">50</td>
-                  <td data-label="Action"><a href="#" class="edit">edit</a></td>
+                  <td data-label="Action"><button class="edit" id="editBtn" onclick="document.getElementById('editTradeModal').style.display='block'">edit</button></td>
                   <td><button class="delete" id="delBtn" onclick="document.getElementById('dialogueModal').style.display='block'">delete</button></td>		        
                 </tr>
           
