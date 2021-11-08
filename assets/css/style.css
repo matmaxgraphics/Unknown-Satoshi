@@ -156,6 +156,9 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
+.navbar__Items .active {
+  color: #F8A606;
+}
 
 .navbar__Items li {
   list-style: none;
@@ -1043,6 +1046,7 @@ footer .footer-content__item .links a:hover {
     border-bottom: 0;
   }
 }
+/*===========COURSE PAGE STYLING=========*/
 .course-banner {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../images/bg-img3.png"), no-repeat, center;
   background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/bg-img3.png"), no-repeat, center;
@@ -1068,6 +1072,8 @@ footer .footer-content__item .links a:hover {
     font-weight: 600;
   }
 }
+/*===========END OF COURSE PAGE STYLING=========*/
+/*===========ONLINE STORE PAGE STYLING=========*/
 .store-banner {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../images/bg-img5.jpg"), no-repeat, center;
   background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/bg-img5.jpg"), no-repeat, center;
@@ -1143,4 +1149,78 @@ footer .footer-content__item .links a:hover {
   margin-left: 8px;
 }
 
-/*---------DEMO SIDEBAR STYLING-------*/
+/*===========END OF ONLINE STORE PAGE STYLING=========*/
+/*========LOGIN PAGE STYLING=======*/
+.login-container header {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 48px;
+}
+
+.login-wrapper {
+  width: 50%;
+  margin: auto;
+  background-color: #1D1D1D;
+  height: 28em;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+.login-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+}
+.login-fields form {
+  width: 80%;
+}
+.login-fields form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 36px;
+}
+.login-fields form .input-field, .login-fields form textarea {
+  margin-top: 8px;
+  width: 100%;
+}
+.login-fields form button {
+  float: right;
+}
+.login-fields p {
+  text-align: center;
+  margin-top: 48px;
+}
+.login-fields p a {
+  text-decoration: underline;
+  color: #F8A606;
+}
+
+@media screen and (max-width: 800px) {
+  .login-wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login-wrapper {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 922px) {
+  .login-container .navbar {
+    position: static;
+    width: 100%;
+  }
+}
