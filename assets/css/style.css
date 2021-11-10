@@ -258,6 +258,12 @@ textarea {
     height: auto;
   }
 }
+@media only screen and (max-width: 550px) {
+  .navbar .navbar-logo {
+    width: 120px;
+    height: auto;
+  }
+}
 /*=====END OF NAVIGATION BAR STYLING=====*/
 /*=====HERO SECTION STYLING=====*/
 .hero-section {

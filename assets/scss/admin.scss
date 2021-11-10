@@ -46,47 +46,18 @@ button{
 .admin-nav{
     height: 72px;
     // border: 1px dashed red;
-    padding: 24px 8px;
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 100%;
-    form{
-        margin-top: -12px;
-    }
-    .admin-search{
-        width: 400px;
-        margin-right: 12px;
-        height: 45px;
-        padding-left: 12px;
-    }
-
-    .search-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $primaryColor;
-        width: 40px;
-        height: 40px;
-        transition: 0.3s;
-        border-radius: 8px;
-        border-width: 0px;
-        color: #fff;
-        float: right;
-        font-size: 18px;
-        position: absolute;
-        right: 24px;
-        top: 14.5px;
-    }
+    // padding: 24px 8px;
+    // display: flex;
+    // justify-content: flex-end;
+    // flex-flow: row wrap;
+    // align-items: center;
+    // width: 100%;
     
 }
 .login-nav .logo-exception{
         margin-top: 24px;
     }
-.admin-nav img{
-    margin-top: 12px;
-}
+
 h2{
     text-align: center;
     margin: 48px 0;
@@ -97,6 +68,7 @@ h2{
     background-color: $bgGrey;
     height: 25em;
     border-radius: 8px;
+    margin-bottom: 48px;
 }
 .login-fields{
     @include formStyling;
@@ -120,53 +92,12 @@ h2{
         position: fixed;
         top: 0;
         background-color: $bgColor;
-        form{
-            margin-top: -12px;
-        }
-        .admin-search{
-            width: 70%;
-            height: 45px;
-            float: right;
-        }
     }
 }
 
-@media screen and (max-width: 350px){
-    .admin-nav{
-        form{
-            margin-top: -12px;
-            // display: flex;
-            // justify-content: flex-end;
-        }
-        .admin-search{
-            width: 200px;
-            height: 45px;
-        }
-    }
-}
-
-/*-------ADMIN INDEX PAGE STYLING--------*/
-.admin-index table{
-    border-collapse: collapse;
-    width: 60%;
-    margin: auto;
-    th, td{
-        text-align: left;
-        padding: 24px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .admin-index{
-        table{
-            width: 95%;
-        }
-        @include responsiveTable600;
-    } 
-
-}
 
 /*========STYLING FOR TRADE HISTORY ADMIN PANEL--------*/
+
 .alt-nav{
     width: 100%;
     display: flex;

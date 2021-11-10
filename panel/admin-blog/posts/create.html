@@ -39,59 +39,62 @@
 
 </head>
 <body>
-    <nav class="admin-nav">
-        <div class="menu-btn">
-            <img src="../../../assets/images/hamburger.png" class="fas fa-bars">
-        </div>
-        <form action="#" method="get" class="exception">
-          <input type="search" placeholder="search for a keyword" name="search" class="input-field admin-search">
-          <button type="submit" class="search-btn"><i class="ri-search-line"></i></button>
-        </form>
-    </nav>
-      <div class="side-bar">
-        <div class="close-btn">
-            <img src="../../../assets/images/close-hamburger.png" class="fas fa-times">
-        </div>
-        <div class="menu">
-            
-         <div class="item">
-            <a class="sub-btn">Manage History<i class="fas fa-angle-right dropdown"></i></a>
-            <div class="sub-menu">
-                <a href="../../admin-history/index.html" class="sub-item">Manage History</a>
-                <a href="../../admin-history/create.html" class="sub-item">Add History</a>
-            </div>
-          </div>
-
-          <div class="item">
-            <a class="sub-btn">Manage Store<i class="fas fa-angle-right dropdown"></i></a>
-            <div class="sub-menu">
-                <a href="../../admin-store/index.html" class="sub-item">Manage Products</a>
-                <a href="../../admin-store/create.html" class="sub-item">Add Product</a>
-            </div>
-          </div>
-
-          <div class="item">
-            <a class="sub-btn">Manage Courses<i class="fas fa-angle-right dropdown"></i></a>
-            <div class="sub-menu">
-                <a href="../../admin-course/index.html" class="sub-item">Manage Courses</a>
-                <a href="../../admin-course/create.html" class="sub-item">Add Course</a>
-            </div>
-          </div>
-          
-          <div class="item">
-            <a class="sub-btn">Manage Blog<i class="fas fa-angle-right dropdown"></i></a>
-            <div class="sub-menu">
-              <a href="index.html" class="sub-item">Manage Posts</a>
-              <a href="create.html" class="sub-item">Add Post</a>
-              <a href="../users/index.html" class="sub-item">Manage Users</a>
-              <a href="../users/create.html" class="sub-item">Add User</a>
-            </div>
-          </div>
-          <div class="item"><a href="#"><i class="ri-logout-box-line"></i>Logout</a></div>
+    <div class="sidebar">
+    <div class="logo-details">
+      <img src="../../../assets/images/logo.png">
+    </div>
+    <ul class="nav-links">
+      <div class="item">
+        <a class="sub-btn">Manage History<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="../../admin-history/index.html" class="sub-item">Manage History</a>
+            <a href="../../admin-history/create.html" class="sub-item">Add History</a>
         </div>
       </div>
+
+      <div class="item">
+        <a class="sub-btn">Manage Store<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="../../admin-store/index.html" class="sub-item">Manage Products</a>
+            <a href="../../admin-store/create.html" class="sub-item">Add Product</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="sub-btn">Manage Courses<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="../../admin-course/index.html" class="sub-item">Manage Courses</a>
+            <a href="../../admin-course/create.html" class="sub-item">Add Course</a>
+        </div>
+      </div>
+      
+      <div class="item">
+        <a class="sub-btn">Manage Blog<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="index.html" class="sub-item">Manage Posts</a>
+          <a href="create.html" class="sub-item">Add Post</a>
+          <a href="../users/index.html" class="sub-item">Manage Users</a>
+          <a href="../users/create.html" class="sub-item">Add User</a>
+        </div>
+      </div>
+      
+    </ul>
+  </div>
       <!--End of sidebar-->
-       
+  <section class="panel-section">
+    <nav class="panel-nav">
+      <div class="sidebar-button">
+        <img src="../../../assets/images/hamburger.png" class='bx bx-menu sidebarBtn'></i>
+      </div>
+      <div class="search-box">
+        <form action="index.html" method="get">
+          <input type="search" placeholder="Search...">
+          <i class='bx bx-search' ></i>
+        </form>
+      </div>
+    </nav>
+    
+    <div class="panel-content"> 
 	<div class="page-wrapper admin-wrapper">		
         <section class="alt-nav">
             <h4>Add Post</h4>
@@ -130,6 +133,8 @@
 
       
 	</div>
+    </div>
+  </section>
 
 
 

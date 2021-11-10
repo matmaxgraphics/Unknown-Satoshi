@@ -53,62 +53,10 @@ button {
 /*----------LOGIN PAGE STYLING----------*/
 .admin-nav {
   height: 72px;
-  padding: 24px 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-.admin-nav form {
-  margin-top: -12px;
-}
-.admin-nav .admin-search {
-  width: 400px;
-  margin-right: 12px;
-  height: 45px;
-  padding-left: 12px;
-}
-.admin-nav .search-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #EE5717;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border-radius: 8px;
-  border-width: 0px;
-  color: #fff;
-  float: right;
-  font-size: 18px;
-  position: absolute;
-  right: 24px;
-  top: 14.5px;
 }
 
 .login-nav .logo-exception {
   margin-top: 24px;
-}
-
-.admin-nav img {
-  margin-top: 12px;
 }
 
 h2 {
@@ -122,6 +70,7 @@ h2 {
   background-color: #1D1D1D;
   height: 25em;
   border-radius: 8px;
+  margin-bottom: 48px;
 }
 
 .login-fields {
@@ -172,70 +121,6 @@ h2 {
     position: fixed;
     top: 0;
     background-color: #0A0909;
-  }
-  .admin-nav form {
-    margin-top: -12px;
-  }
-  .admin-nav .admin-search {
-    width: 70%;
-    height: 45px;
-    float: right;
-  }
-}
-@media screen and (max-width: 350px) {
-  .admin-nav form {
-    margin-top: -12px;
-  }
-  .admin-nav .admin-search {
-    width: 200px;
-    height: 45px;
-  }
-}
-/*-------ADMIN INDEX PAGE STYLING--------*/
-.admin-index table {
-  border-collapse: collapse;
-  width: 60%;
-  margin: auto;
-}
-.admin-index table th, .admin-index table td {
-  text-align: left;
-  padding: 24px;
-}
-
-@media screen and (max-width: 600px) {
-  .admin-index table {
-    width: 95%;
-  }
-  .admin-index table {
-    border: 0;
-  }
-  .admin-index table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  .admin-index table tr {
-    display: block;
-    margin-bottom: 48px;
-  }
-  .admin-index table td {
-    border-bottom: 1px solid #464343;
-    display: block;
-    text-align: right;
-  }
-  .admin-index table td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  .admin-index table table td:last-child {
-    border-bottom: 0;
   }
 }
 /*========STYLING FOR TRADE HISTORY ADMIN PANEL--------*/
