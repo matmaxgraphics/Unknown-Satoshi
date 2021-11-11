@@ -120,6 +120,10 @@ textarea {
   resize: none;
 }
 
+.none {
+  display: none;
+}
+
 /*======ALTERNATIVE STYLING======*/
 /*=====NAVIGATION BAR STYLING=====*/
 .banner-wrapper {
@@ -271,7 +275,6 @@ textarea {
   display: grid;
   place-items: center;
 }
-
 .hero-section .hero-section__title {
   text-align: center;
   max-width: 980px;
@@ -287,12 +290,15 @@ textarea {
   text-align: center;
   margin: auto;
 }
-
 .hero-section .hero-img {
   width: 80%;
   height: auto;
   margin-top: 63px;
   border-radius: 8px;
+}
+.hero-section small {
+  margin-top: 12px;
+  color: #c4c4c4;
 }
 
 @media (max-width: 1000px) {
@@ -1141,7 +1147,7 @@ footer .footer-content__item .links a:hover {
 .pagination {
   margin-top: 24px;
 }
-.pagination p {
+.pagination a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1151,8 +1157,12 @@ footer .footer-content__item .links a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
-.pagination p i {
+.pagination a:hover {
+  text-decoration: underline;
+}
+.pagination a i {
   margin-left: 8px;
 }
 
@@ -1231,3 +1241,62 @@ footer .footer-content__item .links a:hover {
     width: 100%;
   }
 }
+/*==========BLOG PAGE STYLING=======*/
+.blog-post__section {
+  margin-top: 60px;
+}
+.blog-post__section h2 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.blog-post__section .blog-post__container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 0.7rem;
+  place-items: center;
+}
+.blog-post__section .blog-post__card {
+  max-width: 360px;
+  max-width: 360px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background: #1A1919;
+}
+.blog-post__section .blog-post__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 230px;
+  border-radius: 8px;
+}
+.blog-post__section .blog-post__card .text-container {
+  padding: 12px;
+}
+.blog-post__section .blog-post__card h5 {
+  color: #EE5717;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.blog-post__section .blog-post__card h5:hover {
+  text-decoration: underline;
+}
+.blog-post__section .blog-post__card a {
+  color: inherit;
+}
+.blog-post__section .stories-section, .blog-post__section .news-section {
+  margin-top: 72px;
+}
+
+.coming-soon {
+  height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+/*========-END OF BLOG PAGE STYLING=========*/
