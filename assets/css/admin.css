@@ -123,6 +123,53 @@ h2 {
     background-color: #0A0909;
   }
 }
+/*-------ADMIN INDEX PAGE STYLING--------*/
+.admin-index table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+}
+.admin-index table th, .admin-index table td {
+  text-align: center;
+  padding: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .admin-index table {
+    width: 95%;
+  }
+  .admin-index table {
+    border: 0;
+  }
+  .admin-index table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .admin-index table tr {
+    display: block;
+    margin-bottom: 48px;
+  }
+  .admin-index table td {
+    border-bottom: 1px solid #464343;
+    display: block;
+    text-align: right;
+  }
+  .admin-index table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .admin-index table table td:last-child {
+    border-bottom: 0;
+  }
+}
 /*========STYLING FOR TRADE HISTORY ADMIN PANEL--------*/
 .alt-nav {
   width: 100%;

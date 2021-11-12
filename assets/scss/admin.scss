@@ -95,6 +95,27 @@ h2{
     }
 }
 
+/*-------ADMIN INDEX PAGE STYLING--------*/
+.admin-index table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    th, td{
+        text-align: center;
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .admin-index{
+        table{
+            width: 95%;
+        }
+        @include responsiveTable600;
+    } 
+
+}
+
 
 /*========STYLING FOR TRADE HISTORY ADMIN PANEL--------*/
 

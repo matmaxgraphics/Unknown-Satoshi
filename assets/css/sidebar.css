@@ -18,10 +18,11 @@
   align-items: center;
 }
 .sidebar .logo-details img{
-  width: 150px;
+  width: 80px;
   height: auto;
   text-align: center;
   margin-left: 5px;
+  margin-top: 12px;
 }
 
 .sidebar .nav-links{

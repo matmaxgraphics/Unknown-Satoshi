@@ -143,7 +143,7 @@ textarea {
 }
 
 .navbar-logo {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
@@ -200,7 +200,7 @@ textarea {
   }
 
   .navbar-logo {
-    width: 150px;
+    width: 80px;
     height: auto;
     margin: 3px 5px;
   }
@@ -264,7 +264,7 @@ textarea {
 }
 @media only screen and (max-width: 550px) {
   .navbar .navbar-logo {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 }
@@ -314,6 +314,10 @@ textarea {
   .hero-section .hero-section__title {
     font-size: 2em;
     margin: 100px 0 20px 0px;
+  }
+
+  .hero-img {
+    min-width: 90%;
   }
 }
 @media (max-width: 360px) {
