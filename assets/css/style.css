@@ -69,6 +69,14 @@ a {
   color: #fff;
 }
 
+hr {
+  border: 0.5px solid #1A1919;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 96px;
+  border-radius: 8px;
+}
+
 .btn {
   padding: 15px 40px;
   border: 0px;
@@ -703,11 +711,23 @@ footer .footer-content__item .contact-options {
   margin-bottom: 48px;
   max-width: 80%;
 }
+footer .footer-content__item .contact-options .alt-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 24px;
+}
 footer .footer-content__item .contact-options p {
   margin-bottom: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+footer .footer-content__item .contact-options .iconic-paragraph {
+  margin-top: 24px;
 }
 footer .footer-content__item .contact-options a:hover {
   text-decoration: underline;
@@ -740,6 +760,7 @@ footer .footer-content__item .links a {
   margin-bottom: 6px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 14px;
 }
 footer .footer-content__item .links a:hover {
   color: #F8A606;
@@ -1091,11 +1112,19 @@ footer .footer-content__item .links a:hover {
 }
 /*===========END OF COURSE PAGE STYLING=========*/
 /*===========ONLINE STORE PAGE STYLING=========*/
-.store-banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../images/bg-img5.jpg"), no-repeat, center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/bg-img5.jpg"), no-repeat, center;
-  background-size: cover;
+.store-icon {
+  width: 60px;
+  height: auto;
+  margin-top: 24px;
+}
+
+.logo-container {
+  max-width: 200px;
+  margin: auto;
+}
+.logo-container .store-logo {
   width: 100%;
+  height: auto;
 }
 
 .product-wrapper h2 {
