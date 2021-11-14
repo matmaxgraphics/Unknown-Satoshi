@@ -834,12 +834,24 @@ footer .footer-content__item .links a:hover {
   margin: 96px 12px 0 12px;
   max-width: 1020px;
 }
-.about-description h2 {
-  margin-bottom: 12px;
+.about-description .grouped-header {
+  margin-bottom: 36px;
+}
+.about-description .grouped-header h4 {
+  font-weight: normal;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.about-description .grouped-header h2 {
+  max-width: 800px;
+  line-height: 1;
 }
 
 .trading-section {
-  margin-top: 84px;
+  margin-top: 96px;
+}
+.trading-section h5 {
+  margin-bottom: 12px;
 }
 .trading-section .image-container {
   margin-right: 24px;
@@ -848,6 +860,71 @@ footer .footer-content__item .links a:hover {
 @media only screen and (max-width: 450px) {
   .trading-section .image-container {
     margin-bottom: 24px;
+  }
+}
+/*=========VALUE SECTION STYLING=======*/
+.value-section {
+  margin: 96px 0 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 24px;
+  width: 100%;
+  margin-top: 96px;
+}
+.value-section h2 {
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.value-section .description-container {
+  padding-right: 24px;
+}
+.value-section .description-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+.value-section .description-container h5 {
+  font-weight: 600;
+}
+.value-section .image-container {
+  width: 50%;
+}
+.value-section .image-container ul {
+  list-style: none;
+}
+.value-section .image-container li {
+  margin-bottom: 24px;
+}
+.value-section .image-container li .value-icon {
+  margin-right: 12px;
+  background-color: #45AD43;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .value-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .value-section .description-container, .value-section .image-container {
+    width: 100%;
+  }
+  .value-section .image-container {
+    margin-top: 48px;
   }
 }
 .team-section {

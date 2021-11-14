@@ -823,14 +823,26 @@ footer{
 .about-description{
     margin: 96px 12px 0 12px;
     max-width: 1020px;
-    h2{
-        margin-bottom: 12px;
+    .grouped-header{
+        margin-bottom: 36px;
+        h4{
+            font-weight: normal;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+        h2{
+            max-width: 800px;
+            line-height: 1;
+        }
     }
 }
 
 
 .trading-section{
-    margin-top: 84px;
+    margin-top: 96px;
+    h5{
+        margin-bottom: 12px;
+    }
     .image-container{
         margin-right: 24px;
     }
@@ -841,6 +853,46 @@ footer{
             margin-bottom: 24px;
         }
        
+    }
+}
+
+/*=========VALUE SECTION STYLING=======*/
+.value-section{
+    margin: 96px 0 12px 0;
+    @include row-column;
+    .description-container{
+        @include column-description;
+        h5{
+            font-weight: 600;
+        }
+    }
+    .image-container{
+        @include column-img;
+        ul{
+            list-style: none;
+        }
+        li{
+            margin-bottom: 24px;
+            .value-icon{
+                margin-right: 12px;
+                background-color: $success;
+                padding: 8px;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+	.value-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+        }
+        .image-container{
+            margin-top: 48px;
+        }
     }
 }
 
