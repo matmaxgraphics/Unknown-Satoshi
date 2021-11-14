@@ -779,6 +779,7 @@ footer .footer-content__item .links a:hover {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     padding-left: 12px;
+    padding-bottom: 12px;
   }
 }
 /*=====ABOUT PAGE STYLING=====*/
@@ -913,7 +914,12 @@ footer .footer-content__item .links a:hover {
 }
 
 @media only screen and (max-width: 700px) {
+  .trading-section {
+    margin-top: 20px;
+  }
+
   .value-section {
+    margin-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
