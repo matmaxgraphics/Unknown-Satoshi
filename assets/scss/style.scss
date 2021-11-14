@@ -729,8 +729,8 @@ footer{
                 font-size: 24px;
                 margin-right: 12px;
             }
-            .ri-linkedin-fill{
-                background-color: $linkedinBlue;
+            .ri-telegram-line{
+                background-color: $telegramColor;
                 @include icon-preset;
             }
             .ri-twitter-fill{
@@ -895,6 +895,7 @@ footer{
         }
     }
 }
+/*=========END OF VALUE SECTION STYLING=======*/
 
 .team-section{
     margin-top: 96px;
