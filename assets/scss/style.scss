@@ -819,7 +819,9 @@ footer{
     }
 }
 
-
+.about-page hr{
+    display: none;
+}
 
 .about-description{
     margin: 96px 12px 0 12px;
@@ -885,6 +887,9 @@ footer{
 }
 
 @media only screen and (max-width: 700px){
+    .about-page hr{
+        display: block;
+    }
     .trading-section{
         margin-top: 20px;
     }
@@ -1245,3 +1250,71 @@ footer{
     text-align: center;
 }
 /*========-END OF BLOG PAGE STYLING=========*/
+
+
+
+.support-header{
+    a{
+        text-decoration: underline;
+        color: $twitterBlue;
+    }
+}
+.support-wrapper{
+    width: 90%;
+    padding: 24px;
+    margin: auto;
+}
+.crypto-intro{
+    height: auto;
+    padding: 24px;
+    background-color: $bgGrey;
+    border-radius: 8px;
+    h4{
+        margin-bottom: 12px;
+        color: $secondayColor;
+    }
+    a{
+        text-decoration: underline;
+    }
+}
+
+.faqs-section{
+    height: auto;
+    padding: 24px;
+    background-color: $bgGrey;
+    border-radius: 8px;
+    margin-top: 48px;
+    h4{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .faqs-container{
+        margin-top: 24px;
+        details{
+            cursor: pointer;
+            max-width: 900px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+        details > summary{
+            padding: 12px;
+            background-color: $grey-2;
+            border-radius: 8px 8px 0 0;
+            color: $secondayColor;            
+        }
+        details > p{
+            border-radius: 0 0 8px 8px;
+            background-color: $grey-1;
+            padding: 12px;
+        }
+
+        details[open] summary ~ *{
+            animation: sweep 0.3s ease-in-out;
+        }
+
+        @keyframes sweep {
+            0% {opacity: 0; margin-top: -10px;}
+            100% {opacity: 1; margin-top: 0px;}
+        }
+    }
+}
