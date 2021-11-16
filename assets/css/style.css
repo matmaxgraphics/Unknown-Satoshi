@@ -755,6 +755,11 @@ footer .footer-content__item .social-links .ri-instagram-line {
   padding: 8px;
   border-radius: 8px;
 }
+footer .footer-content__item .social-links .ri-youtube-line {
+  background-color: #FF0000;
+  padding: 8px;
+  border-radius: 8px;
+}
 footer .footer-content__item .links a {
   display: block;
   margin-bottom: 6px;

@@ -741,6 +741,10 @@ footer{
                 background-color: $instagramMaroon;
                 @include icon-preset;
             }
+            .ri-youtube-line{
+                background-color: $youtubeRed;
+                @include icon-preset;
+            }
         }
 
         .links{
