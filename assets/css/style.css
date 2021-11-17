@@ -1665,3 +1665,277 @@ footer .footer-content__item .links a:hover {
   max-width: 800px;
   margin: auto;
 }
+
+.hero-banner {
+  width: 100%;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../images/sub-bg.jpg"), no-repeat, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../images/sub-bg.jpg"), no-repeat, center;
+  height: 400px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero-banner .header {
+  margin: auto;
+}
+.hero-banner h1 {
+  font-weight: 600;
+  text-align: center;
+  max-width: 900px;
+  line-height: 1;
+}
+
+.benefit-section {
+  margin: 96px 0 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 24px;
+  width: 100%;
+  margin-top: 96px;
+}
+.benefit-section h2 {
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.benefit-section .description-container {
+  padding-right: 24px;
+}
+.benefit-section .description-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+.benefit-section .description-container h2 {
+  line-height: 1;
+}
+.benefit-section .description-container ul {
+  list-style: none;
+}
+.benefit-section .description-container li {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.benefit-section .description-container li .benefit-icon {
+  margin-right: 12px;
+  background-color: #EE5717;
+  padding: 8px;
+  border-radius: 12px;
+}
+.benefit-section .image-container {
+  width: 50%;
+}
+.benefit-section .image-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .benefit-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .benefit-section .description-container, .benefit-section .image-container {
+    width: 100%;
+  }
+  .benefit-section .image-container {
+    margin-top: 48px;
+  }
+}
+.pricing-section {
+  margin-top: 96px;
+}
+.pricing-section .pricing-header {
+  text-align: center;
+}
+.pricing-section .pricing-header h2 {
+  margin-bottom: 12px;
+}
+.pricing-section .pricing-container {
+  margin-top: 48px;
+  margin-bottom: 72px;
+}
+.pricing-section .plan-wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 48px;
+  place-items: center;
+}
+.pricing-section .plan-wrapper .plan-box {
+  width: 100%;
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  padding: 24px;
+}
+.pricing-section .plan-wrapper .plan-box hr {
+  margin: 12px 0 12px;
+  border: 0.7px solid #434343;
+  width: 100%;
+}
+.pricing-section .plan-wrapper .plan-box .duration {
+  margin-bottom: 24px;
+}
+.pricing-section .plan-wrapper .plan-box .duration span {
+  font-size: 40px;
+  font-weight: 400;
+}
+.pricing-section .plan-wrapper .plan-box .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: auto;
+}
+.pricing-section .plan-wrapper .plan-box .primary {
+  background-color: #EE5717;
+}
+.pricing-section .plan-wrapper .plan-box .purple {
+  background-color: #6A6FDC;
+}
+.pricing-section .plan-wrapper .plan-box .success {
+  background-color: #45AD43;
+}
+.pricing-section .plan-wrapper .popular-box {
+  background-color: unset;
+  border: 1px solid #45AD43;
+  padding: 0px;
+}
+.pricing-section .plan-wrapper .popular-box .popular {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background-color: #45AD43;
+  border-radius: 8px 8px 0 0;
+}
+.pricing-section .plan-wrapper .popular-box main {
+  padding: 24px;
+}
+
+@media (max-width: 905px) {
+  .hero-banner {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-banner {
+    margin-top: 130px;
+  }
+  .hero-banner h1 {
+    font-weight: 600;
+    max-width: 400px;
+    font-size: 2.5em;
+    margin: 0 12px;
+  }
+}
+/*=========SIGN UP PAGE STYLING========*/
+.reg-container header {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 48px;
+}
+
+.reg-wrapper {
+  width: 50%;
+  margin: auto;
+  background-color: #1D1D1D;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  padding-bottom: 24px;
+}
+
+.register-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+}
+.register-fields form {
+  width: 80%;
+}
+.register-fields form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 36px;
+}
+.register-fields form .input-field, .register-fields form textarea {
+  margin-top: 8px;
+  width: 100%;
+}
+.register-fields form button {
+  float: right;
+}
+.register-fields p {
+  text-align: center;
+  margin-top: 48px;
+}
+.register-fields p a {
+  text-decoration: underline;
+  color: #F8A606;
+}
+
+@media screen and (max-width: 800px) {
+  .reg-wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reg-wrapper {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 922px) {
+  .reg-container .navbar {
+    position: static;
+    width: 100%;
+  }
+}

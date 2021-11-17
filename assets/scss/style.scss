@@ -1474,4 +1474,219 @@ footer{
         margin: auto;
     }
 }
+
+
+
+
+.hero-banner{
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient( rgba(0,0,0, 0.3) ), url('../images/sub-bg.jpg'), no-repeat, center;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header{
+        margin: auto;
+    }
+    h1{
+        font-weight: 600;
+        text-align: center;
+        max-width: 900px;
+        line-height: 1;
+    }
+}
+
+.benefit-section{
+    margin: 96px 0 12px 0;
+    @include row-column;
+    .description-container{
+        @include column-description;
+        h2{
+            line-height: 1;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            .benefit-icon{
+                margin-right: 12px;
+                background-color: $primaryColor;
+                padding: 8px;
+                border-radius: 12px;
+            }
+        }
+    }
+    .image-container{
+        @include column-img;
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 700px){
+	.benefit-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+        }
+        .image-container{
+            margin-top: 48px;
+        }
+    }
+}
+
+.pricing-section{
+    margin-top: 96px;
+    .pricing-header{
+        text-align: center;
+        h2{
+            margin-bottom: 12px;
+        }
+    }
+    .pricing-container{
+        margin-top: 48px;
+        margin-bottom: 72px;
+    }
+    .plan-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 48px;
+        place-items: center;
+        .plan-box{
+            width: 100%;
+            background-color: $grey-3;
+            border-radius: 8px;
+            padding: 24px;
+            hr{
+                margin: 12px 0 12px;
+                border: 0.7px solid $inputGrey;
+                width: 100%;
+            }
+            .duration{
+                margin-bottom: 24px;
+                span{
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+            }
+            .btn{
+               display: flex;
+               max-width: 180px;
+               justify-content: center;
+               align-items: flex-end;
+               margin: auto;
+            }
+            .primary{
+                background-color: $primaryColor;
+            }
+            .purple{
+                background-color: #6A6FDC;
+            }
+            .success{
+                background-color: $success;
+            }
+        }
+        .popular-box{
+            background-color: unset;
+            border: 1px solid $success;
+            padding: 0px;
+            .popular{
+                width: 100%;
+                padding: 12px;
+                text-align: center;
+                background-color: $success;
+                border-radius: 8px 8px 0 0;
+            }
+            main{
+                padding: 24px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 905px){
+    .hero-banner{
+        margin-top: 130px;
+    }
+}
+
+@media (max-width: 500px){
+    .hero-banner{
+        margin-top: 130px;
+        h1{
+            font-weight: 600;
+            max-width: 400px;
+            font-size: 2.5em;
+            margin: 0 12px;
+        }
+    }
     
+}
+
+
+/*=========SIGN UP PAGE STYLING========*/
+.reg-container{
+    header{
+        text-align: center;
+        margin-top: 3em;
+        margin-bottom: 48px;
+    }
+}
+    
+.reg-wrapper{
+    width: 50%;
+    margin: auto;
+    background-color: $bgGrey;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    padding-bottom: 24px;
+}
+.register-fields{
+    @include formStyling;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    p{
+        text-align: center;
+        margin-top: 48px;
+        a{
+            text-decoration: underline;
+            color: $secondayColor;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .reg-wrapper{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .reg-wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    .reg-container{
+        .navbar {
+            position: static;
+            width: 100%;
+        }
+    }
+}

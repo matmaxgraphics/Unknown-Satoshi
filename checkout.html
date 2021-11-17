@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>UnknownSatoshi | Login to Continue</title>
+	<title>UnknownSatoshi | Checkout</title>
     
 	<!--SEO Control-->
     <meta name="description" content="enter your details to gain access to the premium contents">
@@ -27,7 +27,7 @@
 
 </head>
 <body>
-	<div class="page-wrapper login-container">		
+	<div class="page-wrapper reg-container">		
         <div class="navbar">
             <div class="navbar__Link navbar__Link-brand">
                 <a href="index.html" class="index-link">
@@ -68,33 +68,40 @@
                                         
                 </ul>
             </nav>
-            <nav class="navbar__Items navbar__Items--right">
-                <div class="navbar__Link">
-                <a class="btn hire-btn" href="register.html">Sign Up</a>
-                </div>
-            </nav>
+            
         </div>
         
         <header>
-            <h2>Welcome Back!</h2>
-            <p>Please enter your details to gain access to the premium contents</p>
+            <h2>Checkout</h2>
         </header>
-        <section class="login-wrapper">
-            <div class="login-fields">               
-                <form action="login.html" method="post">
+        <section class="reg-wrapper">
+            <div class="register-fields">               
+                <form action="checkout.html" method="post">
                     <div>
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="input-field" placeholder="Email Address" required>
                     </div>
                     <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="text" id="text" class="input-field" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <label for="mobile">Phone Number</label>
+                        <input type="tel" name="mobile" id="mobile" class="input-field" placeholder="Mobile number" required>
+                    </div>
+                    <div>
                         <label for="password">Password</label>
                         <input type="password" name="pword" id="pword" class="input-field" placeholder="Your password" required>
                     </div>
+                    <div>
+                        <label for="passwordConf">Confirm Password</label>
+                        <input type="password" name="pwordConf" id="pwordConf" class="input-field" placeholder="Re-enter your password" required>
+                    </div>
 
-                    <button class="btn" type="submit" name="login-btn">Login</button>
+                    <button class="btn" type="submit" name="login-btn">Next</button>
                 </form>
                 
-                <p>Don't have an account? <a href="subscription.html">Register now</a></p>
+                <p>Already have an account? <a href="login.html">Login now</a></p>
             </div>
         </section>
 
