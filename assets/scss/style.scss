@@ -1755,3 +1755,86 @@ footer{
         }
     }
 }
+
+
+/*=======CHECKOUT PAGE STYLING========*/
+.checkout-container header{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 12px;
+}
+.checkout-wrapper{
+    width: 50%;
+    margin: auto;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    padding-bottom: 48px;
+}
+.checkout-fields{
+    @include formStyling;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    .plan-field{
+        background-color: $bgGrey;
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+    .card-details{
+        background-color: $bgGrey;
+        border-radius: 8px;
+        padding: 24px;
+        height: auto;
+        padding-bottom: 72px;
+    }
+    main.logo-container{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: left;
+        margin: unset;
+        margin: 24px 0;
+        img{
+            width: 48px;
+            height: auto;
+            margin-right: 12px;
+        }
+    }
+    .small-fields{
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 45%;
+        }
+    }
+    .btn{
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .checkout-wrapper{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .checkout-wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    .checkout-container{
+        .navbar {
+            position: static;
+            width: 100%;
+        }
+    }
+}
