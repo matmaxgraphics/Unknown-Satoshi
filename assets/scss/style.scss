@@ -1737,13 +1737,15 @@ footer{
 
 @media screen and (max-width: 800px){
     .reg-wrapper{
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 500px){
     .reg-wrapper{
-        width: 90%;
+        form{
+            width: 100%;
+        }
     }
 }
 
@@ -1820,13 +1822,15 @@ footer{
 
 @media screen and (max-width: 800px){
     .checkout-wrapper{
-        width: 80%;
+        width: 100%;
     }
 }
-
 @media screen and (max-width: 500px){
     .checkout-wrapper{
-        width: 90%;
+        form{
+            width: 100%;
+        }
+        
     }
 }
 
