@@ -454,7 +454,10 @@ textarea {
   border-radius: 8px;
 }
 .course-section .course-container__item:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+.course-section .course-container__item h5 {
+  margin-bottom: 12px;
 }
 .course-section .course-container__item img {
   -webkit-transition: 0.3s;
@@ -566,6 +569,9 @@ textarea {
 }
 .testimonial-section .testimonial-container main p {
   margin-bottom: 24px;
+}
+.testimonial-section .testimonial-container main .bold {
+  margin-bottom: 12px;
 }
 
 /*=====END OF TESTIMONIAL SECTION STYLING====*/
@@ -1199,6 +1205,11 @@ footer .footer-content__item .links a:hover {
   font-weight: 600;
   margin-top: 12px;
   font-size: 48px;
+  max-width: 800px;
+}
+.course-banner p {
+  max-width: 900px;
+  margin-top: 12px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -1427,6 +1438,11 @@ footer .footer-content__item .links a:hover {
   margin-top: 72px;
 }
 
+@media only screen and (max-width: 922px) {
+  .blog-post__section {
+    margin-top: 112px;
+  }
+}
 .coming-soon {
   height: 60vh;
   display: -ms-grid;
@@ -1834,9 +1850,8 @@ footer .footer-content__item .links a:hover {
 }
 .benefit-section .description-container li .benefit-icon {
   margin-right: 12px;
-  background-color: #EE5717;
   padding: 8px;
-  border-radius: 12px;
+  color: #45AD43;
 }
 .benefit-section .image-container {
   width: 50%;
@@ -1887,6 +1902,39 @@ footer .footer-content__item .links a:hover {
   background-color: #1A1A1A;
   border-radius: 8px;
   padding: 24px;
+}
+.pricing-section .plan-wrapper .plan-box .discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+.pricing-section .plan-wrapper .plan-box .discount del {
+  font-size: 24px;
+}
+.pricing-section .plan-wrapper .plan-box .discount .saved {
+  padding: 6px;
+  border-radius: 18px;
+  margin-left: 12px;
+}
+.pricing-section .plan-wrapper .plan-box .discount .primary {
+  background-color: #EE5717;
+}
+.pricing-section .plan-wrapper .plan-box .discount .purple {
+  background-color: #6A6FDC;
+}
+.pricing-section .plan-wrapper .plan-box .discount .success {
+  background-color: #45AD43;
+}
+.pricing-section .plan-wrapper .plan-box .popular-discount {
+  margin-top: 12px;
+  margin-left: 24px;
 }
 .pricing-section .plan-wrapper .plan-box hr {
   margin: 12px 0 12px;
@@ -2011,6 +2059,29 @@ footer .footer-content__item .links a:hover {
 .register-fields p a {
   text-decoration: underline;
   color: #F8A606;
+}
+
+.extra-information {
+  max-width: 800px;
+  margin: 48px auto;
+}
+.extra-information div {
+  margin-bottom: 36px;
+}
+.extra-information div h4 {
+  margin-bottom: 12px;
+}
+
+.refund-description .refund {
+  font-size: 46px;
+  color: #F8A606;
+  font-weight: normal;
+}
+
+.cancel-description .cancel {
+  font-size: 46px;
+  color: #F8A606;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 800px) {
@@ -2142,4 +2213,14 @@ footer .footer-content__item .links a:hover {
     position: static;
     width: 100%;
   }
+}
+/*======PRIVACY POLICY STYLING=======*/
+.privacy-wrapper h1 {
+  text-align: center;
+}
+.privacy-wrapper .cookies-container {
+  margin: 60px 0;
+}
+.privacy-wrapper .cookies-container h4 {
+  margin-bottom: 12px;
 }

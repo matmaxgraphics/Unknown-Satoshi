@@ -503,7 +503,10 @@ body{
     .course-container__item{
         @include card-properties;
         &:hover{
-            text-decoration: underline;
+            text-decoration: none;
+        }
+        h5{
+            margin-bottom: 12px;
         }
         img{
             transition: 0.3s;
@@ -591,6 +594,9 @@ body{
           }
           main p {
             margin-bottom: 24px;
+          }
+          main .bold{
+              margin-bottom: 12px;
           }
     }
 
@@ -1064,6 +1070,11 @@ footer{
         font-weight: 600;
         margin-top: 12px;
         font-size: 48px;
+        max-width: 800px;
+    }
+    p{
+        max-width: 900px;
+        margin-top: 12px;
     }
 }
 @media only screen and (max-width: 780px) {
@@ -1247,6 +1258,12 @@ footer{
     }
     .stories-section, .news-section{
         margin-top: 72px;
+    }
+}
+
+@media only screen and (max-width: 922px){
+    .blog-post__section{
+        margin-top: 112px;
     }
 }
 
@@ -1581,9 +1598,10 @@ footer{
             align-items: center;
             .benefit-icon{
                 margin-right: 12px;
-                background-color: $primaryColor;
+                // background-color: $primaryColor;
                 padding: 8px;
-                border-radius: 12px;
+                // border-radius: 12px;
+                color: $success;
             }
         }
     }
@@ -1633,6 +1651,33 @@ footer{
             background-color: $grey-3;
             border-radius: 8px;
             padding: 24px;
+            .discount{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 24px;
+                del{
+                    font-size: 24px;
+                }
+                .saved{
+                    padding: 6px;
+                    border-radius: 18px;
+                    margin-left: 12px;
+                }
+                .primary{
+                    background-color: $primaryColor;
+                }
+                .purple{
+                    background-color: #6A6FDC;
+                }
+                .success{
+                    background-color: $success;
+                }
+            }
+            .popular-discount{
+                margin-top: 12px;
+                margin-left: 24px;
+            }
             hr{
                 margin: 12px 0 12px;
                 border: 0.7px solid $inputGrey;
@@ -1734,7 +1779,30 @@ footer{
         }
     }
 }
-
+.extra-information{
+    max-width: 800px;
+    margin: 48px auto;
+    div{
+        margin-bottom: 36px;
+        h4{
+            margin-bottom: 12px;
+        }
+    }
+}
+.refund-description{
+    .refund{
+        font-size: 46px;
+        color: $secondayColor;
+        font-weight: normal;
+    }
+}
+.cancel-description{
+    .cancel{
+        font-size: 46px;
+        color: $secondayColor;
+        font-weight: normal;
+    }
+}
 @media screen and (max-width: 800px){
     .reg-wrapper{
         width: 80%;
@@ -1837,6 +1905,20 @@ footer{
         .navbar {
             position: static;
             width: 100%;
+        }
+    }
+}
+
+
+/*======PRIVACY POLICY STYLING=======*/
+.privacy-wrapper{
+    h1{
+        text-align: center;
+    }
+    .cookies-container{
+        margin: 60px 0;
+        h4{
+            margin-bottom: 12px;
         }
     }
 }
