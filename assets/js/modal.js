@@ -8,3 +8,5 @@ window.onclick = function(event) {
     }
 }
 
+
+document.getElementById('wallet-address').readOnly = true;

@@ -1922,3 +1922,120 @@ footer{
         }
     }
 }
+
+
+/*========MODAL STYLING-=========*/
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-bottom: 12px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.dialogue-box{
+    background-color: $grey-3;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 550px;
+    height: auto;
+    margin: auto;
+    .content-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+    .address-input{
+        margin-top: 36px;
+        width: 90%;
+        .input-field{
+            margin-top: 12px;
+        }
+    }
+    .close {
+        @include modalCloserStyling;
+    }
+    p{
+        margin-bottom: 12px;
+        text-align: left;
+    }
+    .btn-group{
+        margin-top: 12px;
+        small{
+            color: $success;
+        }
+        p{
+            margin-top: 24px;
+        }
+        ul{
+            margin-left: 24px;
+        }
+        a{
+            margin-top: 12px;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dialogue-box{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 348px) {
+    .dialogue-box{
+        padding: 12px;
+        height: 270px;
+    }
+}
+
+
+.payment-option {
+    width: 100%;
+    .switcher {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        li {
+            display: inline-flex;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: $lightGrey;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            border-bottom: 1px solid transparent;
+            width: 100%;
+            &:hover{
+                color: $secondayColor;
+            }
+        }
+        .active a {
+            color: $secondayColor;
+            border-bottom: 1px solid $secondayColor;
+            &:hover{
+                border-color: transparent;
+                background: $grey-1;
+                color: white;
+            }
+        }
+    }
+
+    .tab-pane {
+        display: none;
+    }
+
+    .tab-pane.active {
+        display: block;
+    }
+}
