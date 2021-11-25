@@ -1236,11 +1236,13 @@ footer{
     .blog-post__container{
         @include responsive-grid;
     }
+    .articleCard, .newsCard, .storyCard{
+        display: none;
+    }
     .blog-post__card{
         max-width: 360px;
         @include card-properties;
         background: $blogCardGrey;
-        display: none;
         .text-container{
             padding: 12px;
         }

@@ -1403,13 +1403,15 @@ footer .footer-content__item .links a:hover {
   gap: 0.7rem;
   place-items: center;
 }
+.blog-post__section .articleCard, .blog-post__section .newsCard, .blog-post__section .storyCard {
+  display: none;
+}
 .blog-post__section .blog-post__card {
   max-width: 360px;
   max-width: 360px;
   border-radius: 8px;
   margin-bottom: 24px;
   background: #1A1919;
-  display: none;
 }
 .blog-post__section .blog-post__card img {
   -o-object-fit: cover;
