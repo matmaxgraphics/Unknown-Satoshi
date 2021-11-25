@@ -10,3 +10,5 @@ window.onclick = function(event) {
 
 
 document.getElementById('wallet-address').readOnly = true;
+document.getElementById('wallet-address-1').readOnly = true;
+document.getElementById('wallet-address-2').readOnly = true;

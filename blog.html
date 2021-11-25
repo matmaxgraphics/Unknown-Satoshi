@@ -115,12 +115,42 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-1.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5>The hidden mystery behind cryptocurrency</h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-6.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5><a href="#">How to grow your crypto currency portfolio</a></h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-2.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5><a href="#">The hidden mystery behind cryptocurrency</a></h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
                     
                 </div>
             </main>
 
             <div class="pagination">
-                <a>Load More<i class="ri-arrow-down-circle-line"></i></a>
+                <a class="pageBtn" role="button">Load More<i class="ri-arrow-down-circle-line"></i></a>
             </div>
 
 
@@ -156,12 +186,42 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-1.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5>The hidden mystery behind cryptocurrency</h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-6.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5><a href="#">How to grow your crypto currency portfolio</a></h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-2.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5><a href="#">The hidden mystery behind cryptocurrency</a></h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
                     
                 </div>
             </main>
             
             <div class="pagination">
-                <a>Load More<i class="ri-arrow-down-circle-line"></i></a>
+                <a class="pageBtn" role="button">Load More<i class="ri-arrow-down-circle-line"></i></a>
             </div>
 
 
@@ -197,12 +257,42 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-1.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5>The hidden mystery behind cryptocurrency</h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-6.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5><a href="#">How to grow your crypto currency portfolio</a></h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-post__card">
+                        <a href="single.html">
+                            <img src="assets/images/img-2.jpg" alt="demo image">
+                            <div class="text-container">
+                                <h5><a href="#">The hidden mystery behind cryptocurrency</a></h5>
+                                <p>I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter...</p>
+                            </div>
+                        </a>
+                    </div>
                     
                 </div>
             </main>
 
             <div class="pagination">
-                <a>Load More<i class="ri-arrow-down-circle-line"></i></a>
+                <a class="pageBtn" role="button">Load More<i class="ri-arrow-down-circle-line"></i></a>
             </div>
 		</section>
 
@@ -286,26 +376,14 @@
 
 <!--OWL CAROUSEL 2 CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-<script type="text/javascript">
-    $('#slider').owlCarousel({
-    loop:true,
-    margin:15,
-    nav:false,
-    dots: true,
-    autoplay:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
+<script>
+    $(".blog-post__card").slice(0, 3).show()
+    $(".pageBtn").on("click", function(){
+        $(".blog-post__card:hidden").slice(0, 3).slideDown()
+        if($(".blog-post__card:hidden").length == 0){
+            $(".pageBtn").fadeOut('slow')
         }
-    }
-})
+    })
 </script>
 </body>
 </html>

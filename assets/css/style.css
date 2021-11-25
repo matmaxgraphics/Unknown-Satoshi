@@ -1409,6 +1409,7 @@ footer .footer-content__item .links a:hover {
   border-radius: 8px;
   margin-bottom: 24px;
   background: #1A1919;
+  display: none;
 }
 .blog-post__section .blog-post__card img {
   -o-object-fit: cover;

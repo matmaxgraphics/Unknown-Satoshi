@@ -1240,6 +1240,7 @@ footer{
         max-width: 360px;
         @include card-properties;
         background: $blogCardGrey;
+        display: none;
         .text-container{
             padding: 12px;
         }
