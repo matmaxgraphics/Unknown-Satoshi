@@ -2379,3 +2379,253 @@ footer .footer-content__item .links a:hover {
 .payment-option .tab-pane.active {
   display: block;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*======PROFILE PAGE STYLING=====*/
+.user-profile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 60px;
+}
+.user-profile .user-image {
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.user-profile .user-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 30px;
+  background-color: #C4C4C4;
+  margin-bottom: 12px;
+}
+.user-profile .user-image div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 24px;
+}
+.user-profile .user-image div label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 12px;
+}
+.user-profile .user-image input[type=file] {
+  background-color: #C4C4C4;
+  color: #000;
+}
+.user-profile .user-image input[type=file]::-ms-browse {
+  background-color: #EE5717;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+}
+.user-profile .user-image input[type=file]::-webkit-file-upload-button {
+  background-color: #EE5717;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+}
+.user-profile .user-image input[type=file]::file-selector-button {
+  background-color: #EE5717;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+}
+.user-profile .user-image input[type=file]::-ms-browse:hover {
+  background-color: #F8A606;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.user-profile .user-image input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #F8A606;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.user-profile .user-image input[type=file]::file-selector-button:hover {
+  background-color: #F8A606;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.user-profile .profile-description {
+  width: 50%;
+}
+.user-profile .profile-description .profile-details h4 {
+  margin-bottom: 24px;
+}
+.user-profile .profile-description .profile-details label {
+  font-weight: 600;
+  color: #F8A606;
+}
+.user-profile .profile-description .profile-fields {
+  margin-top: 60px;
+}
+.user-profile .profile-description .profile-fields h4 {
+  margin-bottom: 24px;
+}
+.user-profile .profile-description .profile-fields form {
+  width: 100%;
+}
+.user-profile .profile-description .profile-fields form form {
+  width: 80%;
+}
+.user-profile .profile-description .profile-fields form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 36px;
+}
+.user-profile .profile-description .profile-fields form form .input-field, .user-profile .profile-description .profile-fields form form textarea {
+  margin-top: 8px;
+  width: 100%;
+}
+.user-profile .profile-description .profile-fields form form button {
+  float: right;
+}
+.user-profile .profile-description .profile-fields form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 36px;
+}
+.user-profile .profile-description .profile-fields form label {
+  margin-bottom: 12px;
+}
+.user-profile .profile-description .profile-fields form .password-change {
+  margin-top: 60px;
+}
+.user-profile .profile-description .profile-fields form h5 {
+  margin-bottom: 48px;
+}
+.user-profile .profile-description .profile-fields button {
+  margin-top: 24px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 920px) {
+  .user-profile {
+    margin-top: 108px;
+  }
+}
+@media only screen and (max-width: 846px) {
+  .user-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-profile .user-image {
+    width: 70%;
+  }
+  .user-profile .profile-description {
+    margin-top: 60px;
+    width: 70%;
+  }
+  .user-profile .profile-description form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .user-profile .user-image {
+    width: 80%;
+  }
+  .user-profile .profile-description {
+    margin-top: 60px;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .user-profile .user-image {
+    width: 80%;
+  }
+  .user-profile .user-image img {
+    width: 100%;
+    height: auto;
+  }
+  .user-profile .profile-description {
+    margin-top: 60px;
+    width: 80%;
+  }
+}

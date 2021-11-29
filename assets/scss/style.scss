@@ -2042,3 +2042,222 @@ footer{
         display: block;
     }
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  /*======PROFILE PAGE STYLING=====*/
+  .user-profile{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 60px;
+      .user-image{
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        img{
+            max-width: 300px;
+            height: auto;
+            border-radius: 30px;
+            background-color: $lightGrey;
+            margin-bottom: 12px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            label{
+                align-self: flex-start;
+                margin-bottom: 12px;
+
+            }
+        }
+        input[type=file]{
+            background-color: $lightGrey;
+            color: #000;
+        }
+        input[type=file]::-ms-browse {
+            background-color: $primaryColor;
+            border-radius: 8px;
+            padding: 10px 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+            color: #fff;
+          }
+          
+          input[type=file]::-webkit-file-upload-button {
+            background-color: $primaryColor;
+            border-radius: 8px;
+            padding: 10px 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+            color: #fff;
+          }
+          
+          input[type=file]::file-selector-button {
+            background-color: $primaryColor;
+            border-radius: 8px;
+            padding: 10px 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+            color: #fff;
+          }
+          
+          input[type=file]::-ms-browse:hover {
+            background-color: $secondayColor;
+            transition: 0.3s;
+          }
+          
+          input[type=file]::-webkit-file-upload-button:hover {
+            background-color: $secondayColor;
+            transition: 0.3s;
+          }
+          
+          input[type=file]::file-selector-button:hover {
+            background-color: $secondayColor;
+            transition: 0.3s;
+          }
+      }
+
+
+      .profile-description{
+          width: 50%;
+          .profile-details{
+              h4{
+                  margin-bottom: 24px;
+              }
+              label{
+                  font-weight: 600;
+                  color: $secondayColor;
+              }
+          }
+          .profile-fields{
+              margin-top: 60px;
+              h4{
+                  margin-bottom: 24px;
+              }
+              form{
+                @include formStyling;
+                width: 100%;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 36px;
+                }
+                label{
+                    margin-bottom: 12px;
+                }
+                .password-change{
+                    margin-top: 60px;
+                }
+                h5{
+                    margin-bottom: 48px;
+                }
+              }
+              button{
+                  margin-top: 24px;
+                  text-align: center;
+              }
+          }
+      }
+  }
+
+@media only screen and (max-width: 920px) {
+    .user-profile{
+        margin-top: 108px;
+    }
+}
+
+@media only screen and (max-width: 846px) {
+    .user-profile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .user-image{
+            width: 70%;
+        }
+        .profile-description{
+            margin-top: 60px;
+            width: 70%;
+    
+            form{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .user-profile{
+        .user-image{
+            width: 80%;
+        }
+        .profile-description{
+            margin-top: 60px;
+            width: 80%;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .user-profile{
+        .user-image{
+            width: 80%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .profile-description{
+            margin-top: 60px;
+            width: 80%;
+        }
+    }
+    
+}
