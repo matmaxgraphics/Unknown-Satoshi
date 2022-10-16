@@ -11,12 +11,17 @@ function classToggle() {
 
 navs.forEach(nav=>{
   nav.addEventListener("click", function () {
-    if (nav-link.classList.contains("show")) {
-      nav-link.classList.remove("show")
+    if (nav.classList.contains("show")) {
+      nav.classList.remove("show")
     }
   })
 })
 
+//share button function
+function actionToggle(){
+  var action = document.querySelector('.action');
+  action.classList.toggle('active')
+}
 
 
 

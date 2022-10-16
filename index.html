@@ -41,9 +41,12 @@
 					<img src="assets/images/logo.png" class="navbar-logo" alt="website's logo">
 					</a>
 				</div>
-			
+				
+				<div class="profile-wrapper">
+					<a href="profile.html"><img src="assets/images/user1.png" class="img-profile"></i></a>
+				</div>
 				<div class="navbar__Link navbar__Link-toggle">
-					<img src="assets/images/hamburger.png" alt="site's hamburger" oncl>
+					<img src="assets/images/hamburger.png" alt="site's hamburger">
 					<!-- <img src="assets/images/close-hamburger.png" alt="close menu" class="close-menu"> -->
 				</div>
 		
@@ -72,10 +75,24 @@
 						<li class="navbar__Link">
 							<a class="nav-link" href="contact.html">Contact us</a>
 						</li>
+
+						<li class="navbar__Link" id="dropdown-link">
+							<a class="nav-link dropdown-button" href="contact.html">Exchange Review <i class="ri-arrow-down-s-line"></i></a>
+							<div class="dropdown-contents">
+								<a href="#">Bybit Exchange</a>
+								<a href="#">Binance Exchange</a>
+								<a href="#">Ftx Exchange</a>
+								<a href="#">Phemex Exchange</a>
+							</div>
+						</li>
 											
 					</ul>
 				</nav>
+				
 				<nav class="navbar__Items navbar__Items--right">
+					<div class="profile">
+						<a href="profile.html"><img src="assets/images/user1.png" class="img-profile"></i></a>
+					</div>
 					<div class="navbar__Link">
 					<a class="btn hire-btn" href="register.html">Sign Up</a>
 					</div>
@@ -147,7 +164,7 @@
 		<hr>
 
 		<section class="course-section">
-			<h2>You cannot find any course as simple to learn as this!</h2>
+			<h2 class="course-heading">Our Courses</h2>
 			<div class="course-container">
 				<div class="course-container__item">
 					<a href="#">
