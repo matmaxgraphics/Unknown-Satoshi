@@ -1785,8 +1785,26 @@ footer .footer-content__item .links a:hover {
           align-items: center;
   margin-right: 12px;
 }
-.article-wrapper .article-details i {
-  margin-right: 6px;
+.article-wrapper .article-details ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.article-wrapper .article-details li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .article-wrapper .article-details .icon-bg-dark {
   padding: 12px;
@@ -1842,6 +1860,70 @@ footer .footer-content__item .links a:hover {
   bottom: 0;
   left: 50%;
   right: 50%;
+}
+
+.ri-heart-line {
+  color: #fff !important;
+}
+
+.ri-heart-fill {
+  color: rgb(236, 53, 53);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.share-btn {
+  position: relative;
+}
+
+.social-sharing {
+  position: absolute;
+  -webkit-transform: translate(2%, -65%);
+          transform: translate(2%, -65%);
+}
+
+.hidden {
+  display: none;
+}
+
+.social-sharing__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+}
+.social-sharing__wrapper span {
+  margin-bottom: 6px;
+}
+.social-sharing__wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-sharing__wrapper a:hover {
+  color: #f8a606;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-sharing__wrapper i {
+  margin-right: 6px;
+  font-size: 18px;
 }
 
 .comment-section {

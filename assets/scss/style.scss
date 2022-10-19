@@ -1407,8 +1407,16 @@ footer {
       align-items: center;
       margin-right: 12px;
     }
-    i {
-      margin-right: 6px;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    li {
+      display: flex;
+      align-items: center;
     }
     .icon-bg-dark {
       padding: 12px;
@@ -1465,83 +1473,128 @@ footer {
   right: 50%;
 }
 
-
-.comment-section{
-    width: 90%;
-    margin: auto;
-    margin-top: 48px;
-    form{
-        margin-bottom: 60px;
-        width: 80%;
-        div{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        label{
-            margin-bottom: 12px;
-        }
-        textarea{
-            width: 100%;
-        }
-        button{
-            margin-top: 24px;
-            float: right;
-            margin-bottom: 48px;
-        }
-    }
+.ri-heart-line {
+  color: #fff !important;
+}
+.ri-heart-fill {
+  color: rgb(236, 53, 53);
+  transition: 0.3s all;
 }
 
-.comments-wrapper{
-    margin-top: 48px;
-    clear: both;
-    h4{
-        margin-bottom: 24px;
+.share-btn {
+  position: relative;
+}
+.social-sharing {
+  position: absolute;
+  transform: translate(2%, -65%);
+}
+
+.hidden{
+  display: none;
+}
+
+.social-sharing__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  span{
+    margin-bottom: 6px;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    transition: 0.3s;
+    &:hover{
+      color: #f8a606;
+      transition: 0.3s;
     }
-    .comment-container{
-        margin-bottom: 24px;
-        border-bottom: 1px solid rgb(92 92 92 / 60%);;
-        padding-bottom: 24px;
-        width: 80%;
-        &:last-child{
-            border-bottom: unset;
-        }
-        .profile-container{
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            img{
-                width: 40px;
-                height: 40px;
-                margin-right: 12px;
-                border-radius: 50%;
-                object-fit: cover;
-                object-position: center;
-            }
-            span{
-                font-size: 18px;
-                font-weight: 600;
-            }
-        }
+  }
+  i{
+    margin-right: 6px;
+    font-size: 18px;
+  }
+}
+.comment-section {
+  width: 90%;
+  margin: auto;
+  margin-top: 48px;
+  form {
+    margin-bottom: 60px;
+    width: 80%;
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
+    label {
+      margin-bottom: 12px;
+    }
+    textarea {
+      width: 100%;
+    }
+    button {
+      margin-top: 24px;
+      float: right;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.comments-wrapper {
+  margin-top: 48px;
+  clear: both;
+  h4 {
+    margin-bottom: 24px;
+  }
+  .comment-container {
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgb(92 92 92 / 60%);
+    padding-bottom: 24px;
+    width: 80%;
+    &:last-child {
+      border-bottom: unset;
+    }
+    .profile-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
 }
 .related-posts {
   margin-top: 96px;
 }
 
-@media (max-width: 800px){
-    .comment-section{
-        width: 100%;
-        form{
-            width: 100%;
-        }
+@media (max-width: 800px) {
+  .comment-section {
+    width: 100%;
+    form {
+      width: 100%;
     }
-    
-    .comments-wrapper{
-        .comment-container{
-            width: 100%;
-        }
+  }
+
+  .comments-wrapper {
+    .comment-container {
+      width: 100%;
     }
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -1561,7 +1614,6 @@ footer {
     }
   }
 }
-
 
 //PREMIUM CONTENT
 .restriction-box {
